@@ -9,7 +9,7 @@
 	<script type="module" src="js/app.js"></script>
 </head>
 <body>
-	<sign-randomizer>
+	<sign-randomizer data-mode="learn">
 		<header class="sign-randomizer__header">
 			<div class="sign-randomizer__count" data-randomizer-count></div>
 			<div class="sign-randomizer__modes" role="group" aria-label="Modus">
@@ -20,13 +20,13 @@
 			<button id="randomizer-exclude" type="button" disabled>Sluit uit</button>
 			<button id="randomizer-next" type="button" disabled>Volgende</button>
 		</header>
-		<main class="sign-randomizer__main" data-randomizer-main data-mode="learn">
+		<main class="sign-randomizer__main">
 			<sign-viewer hidden>
 				<sign-name>
 					<div class="sign-name__gloss"></div>
 					<div class="sign-name__translation"></div>
 				</sign-name>
-				<sign-video data-mode="learn">
+				<sign-video>
 					<video class="sign-video__media" controls autoplay loop playsinline muted></video>
 					<button type="button" class="sign-video__play-hint" aria-label="Video afspelen">▶</button>
 					<a class="sign-video__error" target="_blank" rel="noopener" hidden>Video kon niet geladen worden. Open op woordenboek.</a>

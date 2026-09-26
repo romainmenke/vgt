@@ -1,26 +1,33 @@
+import { getIndex, getVariants } from './sign-data.js';
+
 export class SignMeta extends HTMLElement {
-	#labels = {};
+	#clickHandler = ( event ) => {
+		const btn = event.target.closest( '[data-variant-sign-id]' );
 
-	#locations = {};
+		if ( !btn || !this.contains( btn ) ) {
+			return;
+		}
 
-	#handshapeIcons = {};
+		this.dispatchEvent( new CustomEvent( 'variant-selected', {
+			bubbles: true,
+			composed: true,
+			detail: {
+				signId: Number( btn.getAttribute( 'data-variant-sign-id' ) ),
+			},
+		} ) );
+	};
 
-	#locationIcons = {};
-
-	#byGloss = new Map();
-
-	#onVariantSelected = () => {};
-
-	set data( value ) {
-		this.#labels = value.labels ?? {};
-		this.#locations = value.locations ?? {};
-		this.#handshapeIcons = value.handshapeIcons ?? {};
-		this.#locationIcons = value.locationIcons ?? {};
-		this.#byGloss = value.byGloss ?? new Map();
+	get index() {
+		return getIndex();
 	}
 
-	set onVariantSelected( handler ) {
-		this.#onVariantSelected = handler;
+	// Life cycle
+	connectedCallback() {
+		this.addEventListener( 'click', this.#clickHandler );
+	}
+
+	disconnectedCallback() {
+		this.removeEventListener( 'click', this.#clickHandler );
 	}
 
 	#section( name ) {
@@ -41,11 +48,12 @@ export class SignMeta extends HTMLElement {
 
 	#renderHandshapes( sign ) {
 		const items = [];
+		const index = this.index;
 
-		if ( sign.handshape ) {
+		if ( sign.handshape && index ) {
 			items.push( {
 				label: this.#handshapeLabel( sign.handshape ),
-				svg: this.#handshapeIcons[sign.handshape],
+				svg: index.handshapeIcons[sign.handshape],
 			} );
 		}
 
@@ -54,11 +62,12 @@ export class SignMeta extends HTMLElement {
 
 	#renderLocations( sign ) {
 		const items = [];
+		const index = this.index;
 
-		if ( sign.location ) {
+		if ( sign.location && index ) {
 			items.push( {
-				label: this.#locations[sign.location] ?? sign.location,
-				svg: this.#locationIcons[sign.location],
+				label: index.locations[sign.location] ?? sign.location,
+				svg: index.locationIcons[sign.location],
 			} );
 		}
 
@@ -78,28 +87,33 @@ export class SignMeta extends HTMLElement {
 	}
 
 	#renderLabels( sign ) {
+		const index = this.index;
+
 		this.#renderChips( 'labels', sign.labels.map( ( id ) => {
-			return this.#labels[id] ?? id;
+			if ( !index ) {
+				return id;
+			}
+
+			return index.labels[id] ?? id;
 		} ) );
 	}
 
 	#renderVariants( sign ) {
 		const container = this.querySelector( '[data-meta-variants]' );
+
 		if ( !container ) {
 			return;
 		}
 
-		const variants = this.#byGloss.get( sign.glossName ) ?? [];
+		const variants = getVariants( sign.glossName );
 
 		container.replaceChildren( ...variants.map( ( variant ) => {
 			const btn = document.createElement( 'button' );
 			btn.type = 'button';
 			btn.textContent = variant.translations.join( ', ' ) || variant.glossName;
 			btn.title = `${variant.glossName} #${variant.signId}`;
+			btn.setAttribute( 'data-variant-sign-id', String( variant.signId ) );
 			btn.setAttribute( 'aria-current', String( variant.signId === sign.signId ) );
-			btn.addEventListener( 'click', () => {
-				return this.#onVariantSelected( variant );
-			} );
 
 			return btn;
 		} ) );
@@ -109,6 +123,7 @@ export class SignMeta extends HTMLElement {
 
 	#renderChips( name, values ) {
 		const container = this.#chipsEl( name );
+
 		if ( !container ) {
 			return;
 		}
@@ -121,11 +136,12 @@ export class SignMeta extends HTMLElement {
 			return span;
 		} ) );
 
-		this.#section( name ).hidden = values.length === 0;
+		this.#section( name ).hidden = 0 === values.length;
 	}
 
 	#renderTiles( name, items ) {
 		const container = this.querySelector( `[data-meta-tiles="${name}"]` );
+
 		if ( !container ) {
 			return;
 		}
@@ -147,7 +163,7 @@ export class SignMeta extends HTMLElement {
 			return tile;
 		} ) );
 
-		this.#section( name ).hidden = items.length === 0;
+		this.#section( name ).hidden = 0 === items.length;
 	}
 
 	#handshapeLabel( value ) {

@@ -1,34 +1,86 @@
-const LISTS_KEY = 'vgt-randomizer:lists';
+import { closestRandomizer } from './dom.js';
+import { readLists,
+	writeLists } from './storage.js';
 
 export class SignLists extends HTMLElement {
-	#lists = [];
+	get listId() {
+		const value = this.getAttribute( 'data-list-id' );
 
-	#activeListId = '';
+		if ( null === value || '' === value ) {
+			return null;
+		}
 
-	#currentSignId = null;
-
-	#onChange = () => {};
-
-	get lists() {
-		return this.#lists;
+		return value;
 	}
 
-	get activeListId() {
-		return this.#activeListId;
-	}
+	set listId( value ) {
+		if ( null === value || undefined === value || '' === value ) {
+			this.removeAttribute( 'data-list-id' );
 
-	get activeList() {
-		return this.#lists.find( ( list ) => {
-			return list.id === this.#activeListId;
-		} ) ?? null;
+			return;
+		}
+
+		this.setAttribute( 'data-list-id', value );
 	}
 
 	get promptEl() {
 		return this.querySelector( 'sign-prompt' );
 	}
 
-	set onChange( handler ) {
-		this.#onChange = handler;
+	get selectEl() {
+		return this.querySelector( '#lists-select' );
+	}
+
+	get addEl() {
+		return this.querySelector( '#lists-add' );
+	}
+
+	get removeEl() {
+		return this.querySelector( '#lists-remove' );
+	}
+
+	activeList() {
+		const listId = this.listId;
+
+		if ( !listId ) {
+			return null;
+		}
+
+		return readLists().find( ( list ) => {
+			return list.id === listId;
+		} ) ?? null;
+	}
+
+	signIdsForActiveList() {
+		const list = this.activeList();
+
+		if ( list ) {
+			return list.signIds;
+		}
+
+		return null;
+	}
+
+	#currentSignId() {
+		const randomizerEl = closestRandomizer( this );
+
+		if ( !randomizerEl ) {
+			return null;
+		}
+
+		return randomizerEl.signId;
+	}
+
+	// Life cycle
+	connectedCallback() {
+		this.addEventListener( 'click', this.#clickHandler );
+		this.addEventListener( 'change', this.#changeHandler );
+		this.render();
+	}
+
+	disconnectedCallback() {
+		this.removeEventListener( 'click', this.#clickHandler );
+		this.removeEventListener( 'change', this.#changeHandler );
 	}
 
 	#clickHandler = ( event ) => {
@@ -55,46 +107,26 @@ export class SignLists extends HTMLElement {
 		const selectEl = event.target.closest( '#lists-select' );
 
 		if ( selectEl ) {
-			this.#selectChangeHandler( event );
+			this.#selectChangeHandler();
 		}
 	};
 
-	// Life cycle
-	connectedCallback() {
-		this.#lists = this.#load();
-		this.#render();
-		this.addEventListener( 'click', this.#clickHandler );
-		this.addEventListener( 'change', this.#changeHandler );
+	#emitChange() {
+		this.dispatchEvent( new CustomEvent( 'lists-change', {
+			bubbles: true,
+			composed: true,
+		} ) );
 	}
 
-	disconnectedCallback() {
-		this.removeEventListener( 'click', this.#clickHandler );
-		this.removeEventListener( 'change', this.#changeHandler );
-	}
+	render() {
+		const selectEl = this.selectEl;
 
-	#query( selector ) {
-		return this.querySelector( selector );
-	}
-
-	#load() {
-		try {
-			return JSON.parse( localStorage.getItem( LISTS_KEY ) ?? '[]' ) ?? [];
-		} catch {
-			return [];
-		}
-	}
-
-	#save() {
-		localStorage.setItem( LISTS_KEY, JSON.stringify( this.#lists ) );
-	}
-
-	#render() {
-		const selectEl = this.#query( '#lists-select' );
 		if ( !selectEl ) {
 			return;
 		}
 
-		const selected = selectEl.value;
+		const lists = readLists();
+		const previousValue = selectEl.value;
 
 		selectEl.replaceChildren();
 
@@ -103,43 +135,49 @@ export class SignLists extends HTMLElement {
 		all.textContent = 'Alle tekens';
 		selectEl.append( all );
 
-		for ( const list of this.#lists ) {
+		for ( const list of lists ) {
 			const opt = document.createElement( 'option' );
 			opt.value = list.id;
 			opt.textContent = `${list.name} (${list.signIds.length})`;
 			selectEl.append( opt );
 		}
 
-		if ( this.#lists.some( ( list ) => {
-			return list.id === selected;
+		const currentListId = this.listId;
+		const stillExists = lists.some( ( list ) => {
+			return list.id === currentListId;
+		} );
+
+		if ( stillExists ) {
+			this.listId = currentListId;
+		} else if ( lists.some( ( list ) => {
+			return list.id === previousValue;
 		} ) ) {
-			this.#activeListId = selected;
+			this.listId = previousValue;
+		} else {
+			this.listId = null;
 		}
 
-		if ( !this.#lists.some( ( list ) => {
-			return list.id === this.#activeListId;
-		} ) ) {
-			this.#activeListId = '';
-		}
+		selectEl.value = this.listId ?? '';
 
-		selectEl.value = this.#activeListId;
+		const removeEl = this.removeEl;
 
-		const removeEl = this.#query( '#lists-remove' );
 		if ( removeEl ) {
-			removeEl.disabled = !this.#activeListId;
+			removeEl.disabled = !this.listId;
 		}
 
 		this.#syncAddLabel();
 	}
 
 	#syncAddLabel() {
-		const addEl = this.#query( '#lists-add' );
+		const addEl = this.addEl;
+
 		if ( !addEl ) {
 			return;
 		}
 
-		const list = this.activeList;
-		const included = list && null !== this.#currentSignId && list.signIds.includes( this.#currentSignId );
+		const list = this.activeList();
+		const signId = this.#currentSignId();
+		const included = list && null !== signId && list.signIds.includes( signId );
 
 		if ( included ) {
 			addEl.textContent = 'Verwijder uit lijst';
@@ -150,6 +188,7 @@ export class SignLists extends HTMLElement {
 
 	async #askListName( title ) {
 		const promptEl = this.promptEl;
+
 		if ( !promptEl ) {
 			return null;
 		}
@@ -157,6 +196,7 @@ export class SignLists extends HTMLElement {
 		const value = await promptEl.ask( {
 			title,
 		} );
+
 		if ( !value || !value.trim() ) {
 			return null;
 		}
@@ -165,24 +205,29 @@ export class SignLists extends HTMLElement {
 	}
 
 	#createList( name ) {
+		const lists = readLists();
+
 		const list = {
 			id: `l${Date.now()}`,
 			name: name,
 			signIds: [],
 		};
 
-		this.#lists.push( list );
-		this.#save();
+		lists.push( list );
+		writeLists( lists );
 
 		return list;
 	}
 
 	async #resolveTargetList() {
-		if ( this.#activeListId ) {
-			return this.activeList;
+		const lists = readLists();
+		const activeList = this.activeList();
+
+		if ( activeList ) {
+			return activeList;
 		}
 
-		if ( 0 === this.#lists.length ) {
+		if ( 0 === lists.length ) {
 			const name = await this.#askListName( 'Naam van de nieuwe lijst:' );
 
 			if ( !name ) {
@@ -192,16 +237,17 @@ export class SignLists extends HTMLElement {
 			return this.#createList( name );
 		}
 
-		if ( 1 === this.#lists.length ) {
-			return this.#lists[0];
+		if ( 1 === lists.length ) {
+			return lists[0];
 		}
 
 		const promptEl = this.promptEl;
+
 		if ( !promptEl ) {
 			return null;
 		}
 
-		const names = this.#lists.map( ( list ) => {
+		const names = lists.map( ( list ) => {
 			return list.name;
 		} );
 		const title = `Naam van de lijst om in te bewaren:\n${names.join( ', ' )}`;
@@ -213,88 +259,101 @@ export class SignLists extends HTMLElement {
 			return null;
 		}
 
-		return this.#lists.find( ( list ) => {
+		return lists.find( ( list ) => {
 			return list.name === choice.trim();
 		} ) ?? null;
 	}
 
+	#updateList( mutate ) {
+		const lists = readLists();
+
+		mutate( lists );
+
+		writeLists( lists );
+		this.render();
+		this.#emitChange();
+	}
+
 	#selectChangeHandler = () => {
-		this.#activeListId = this.#query( '#lists-select' )?.value ?? '';
-		this.#render();
-		this.#onChange();
+		let value = null;
+
+		if ( this.selectEl ) {
+			value = this.selectEl.value;
+		}
+
+		this.listId = value;
+		this.render();
+		this.#emitChange();
 	};
 
 	#createHandler = async( event ) => {
 		event.preventDefault();
 
 		const name = await this.#askListName( 'Naam van de nieuwe lijst:' );
+
 		if ( !name ) {
 			return;
 		}
 
-		const list = this.#createList( name );
-		this.#activeListId = list.id;
-		this.#render();
-		this.#onChange();
+		this.#createList( name );
+		this.render();
 	};
 
 	#removeHandler = ( event ) => {
 		event.preventDefault();
 
-		const list = this.activeList;
+		const list = this.activeList();
+
 		if ( !list ) {
 			return;
 		}
 
-		this.#lists = this.#lists.filter( ( item ) => {
-			return item.id !== list.id;
+		this.listId = null;
+
+		this.#updateList( ( lists ) => {
+			const at = lists.findIndex( ( item ) => {
+				return item.id === list.id;
+			} );
+
+			if ( -1 !== at ) {
+				lists.splice( at, 1 );
+			}
 		} );
-		this.#save();
-		this.#activeListId = '';
-		this.#render();
-		this.#onChange();
 	};
 
 	#addHandler = async( event ) => {
 		event.preventDefault();
 
-		if ( null === this.#currentSignId ) {
+		const signId = this.#currentSignId();
+
+		if ( null === signId ) {
 			return;
 		}
 
 		const list = await this.#resolveTargetList();
+
 		if ( !list ) {
 			return;
 		}
 
-		const at = list.signIds.indexOf( this.#currentSignId );
-		if ( -1 === at ) {
-			list.signIds.push( this.#currentSignId );
-		} else {
-			list.signIds.splice( at, 1 );
-		}
+		this.#updateList( ( lists ) => {
+			const target = lists.find( ( item ) => {
+				return item.id === list.id;
+			} );
 
-		this.#save();
-		this.#activeListId = list.id;
-		this.#render();
-		this.#syncAddLabel();
-		this.#onChange();
+			if ( !target ) {
+				return;
+			}
+
+			const at = target.signIds.indexOf( signId );
+
+			if ( -1 === at ) {
+				target.signIds.push( signId );
+			} else {
+				target.signIds.splice( at, 1 );
+			}
+		} );
 	};
-
-	signIdsForActiveList() {
-		const list = this.activeList;
-
-		if ( list ) {
-			return list.signIds;
-		}
-
-		return null;
-	}
-
-	set signId( value ) {
-		this.#currentSignId = value;
-		this.#syncAddLabel();
-	}
 }
 
 customElements.define( 'sign-lists', SignLists );

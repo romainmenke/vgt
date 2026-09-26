@@ -1,91 +1,68 @@
-const EXCLUDED_KEY = 'vgt-randomizer:excluded';
-const MODE_KEY = 'vgt-randomizer:mode';
-const MODES = [
-	'learn',
-	'recognise',
-	'recite',
-];
+import { closestLists,
+	readNumberAttribute,
+	readStringAttribute,
+	writeNumberAttribute } from './dom.js';
+import { getIndex,
+	getSign,
+	getSigns,
+	whenReady } from './sign-data.js';
+import { MODES,
+	readExcludedSignIds,
+	readMode,
+	writeExcludedSignIds,
+	writeMode } from './storage.js';
 
 export class SignRandomizer extends HTMLElement {
-	#signs = [];
+	get signId() {
+		return readNumberAttribute( this, 'data-sign-id' );
+	}
 
-	#excluded = new Set();
+	set signId( value ) {
+		writeNumberAttribute( this, 'data-sign-id', value );
+	}
 
-	#byGloss = new Map();
+	get mode() {
+		const mode = readStringAttribute( this, 'data-mode', MODES );
 
-	#current = null;
+		if ( !mode ) {
+			return 'learn';
+		}
 
-	#mode = 'learn';
+		return mode;
+	}
 
-	#data = {};
+	set mode( value ) {
+		this.setAttribute( 'data-mode', value );
+	}
+
+	get viewerEl() {
+		return this.querySelector( 'sign-viewer' );
+	}
+
+	get listsEl() {
+		return this.querySelector( 'sign-lists' );
+	}
 
 	// Life cycle
 	async connectedCallback() {
-		this.#excluded = new Set( this.#load( EXCLUDED_KEY, [] ) );
-
-		const storedMode = this.#load( MODE_KEY, '' );
-		if ( MODES.includes( storedMode ) ) {
-			this.#mode = storedMode;
-		} else {
-			this.#mode = 'learn';
-		}
-
-		await this.#whenChildrenDefined();
-		this.#wireEvents();
+		this.mode = readMode();
+		this.#renderModes();
+		this.addEventListener( 'click', this.#clickHandler );
+		this.addEventListener( 'variant-selected', this.#variantSelectedHandler );
+		this.addEventListener( 'lists-change', this.#listsChangeHandler );
 
 		try {
-			const res = await fetch( 'signs.json' );
-			if ( !res.ok ) {
-				throw new Error( `signs.json: HTTP ${res.status}` );
-			}
-
-			const data = await res.json();
-
-			this.#signs = data.signs ?? [];
-			this.#data = {
-				labels: data.labels ?? {},
-				locations: data.locations ?? {},
-				handshapeIcons: data.handshapeIcons ?? {},
-				locationIcons: data.locationIcons ?? {},
-				byGloss: new Map(),
-			};
-
-			for ( const sign of this.#signs ) {
-				const group = this.#data.byGloss.get( sign.glossName ) ?? [];
-				group.push( sign );
-				this.#data.byGloss.set( sign.glossName, group );
-			}
-
-			const viewerEl = this.querySelector( 'sign-viewer' );
-			if ( viewerEl ) {
-				viewerEl.data = this.#data;
-				viewerEl.onVariantSelected = ( variant ) => {
-					return this.#show( variant );
-				};
-				viewerEl.mode = this.#mode;
-			}
-
-			this.#renderModes();
+			await whenReady();
 			this.#next();
 		} catch ( err ) {
 			this.#showError( err );
 		}
 	}
 
-	#whenChildrenDefined() {
-		const names = [
-			'sign-viewer',
-			'sign-name',
-			'sign-video',
-			'sign-meta',
-			'sign-lists',
-			'sign-prompt',
-			'icon-tile',
-		];
-
-		return Promise.all( names.map( ( name ) => {
-			return customElements.whenDefined( name );
-		} ) );
+	disconnectedCallback() {
+		this.removeEventListener( 'click', this.#clickHandler );
+		this.removeEventListener( 'variant-selected', this.#variantSelectedHandler );
+		this.removeEventListener( 'lists-change', this.#listsChangeHandler );
 	}
 
 	#clickHandler = ( event ) => {
@@ -110,48 +87,40 @@ export class SignRandomizer extends HTMLElement {
 		}
 	};
 
-	#wireEvents() {
-		this.addEventListener( 'click', this.#clickHandler );
+	#variantSelectedHandler = ( event ) => {
+		event.stopPropagation();
+		this.signId = event.detail.signId;
+		this.#renderCurrent();
+	};
 
-		const listsEl = this.querySelector( 'sign-lists' );
-		if ( listsEl ) {
-			listsEl.onChange = () => {
-				return this.#next();
-			};
-		}
-	}
-
-	disconnectedCallback() {
-		this.removeEventListener( 'click', this.#clickHandler );
-	}
-
-	#load( key, fallback ) {
-		try {
-			return JSON.parse( localStorage.getItem( key ) ?? 'null' ) ?? fallback;
-		} catch {
-			return fallback;
-		}
-	}
+	#listsChangeHandler = ( event ) => {
+		event.stopPropagation();
+		this.#next();
+	};
 
 	#pool() {
-		const listsEl = this.querySelector( 'sign-lists' );
-		const signIds = listsEl?.signIdsForActiveList();
+		const listsEl = closestLists( this );
 
-		if ( signIds ) {
-			return signIds.map( ( id ) => {
-				return this.#signs.find( ( sign ) => {
-					return sign.signId === id;
-				} );
-			} ).filter( Boolean );
+		if ( listsEl ) {
+			const listSignIds = listsEl.signIdsForActiveList();
+
+			if ( listSignIds ) {
+				return listSignIds.map( ( signId ) => {
+					return getSign( signId );
+				} ).filter( Boolean );
+			}
 		}
 
-		return this.#signs.filter( ( sign ) => {
-			return !this.#excluded.has( sign.signId );
+		const excludedSignIds = readExcludedSignIds();
+
+		return getSigns().filter( ( sign ) => {
+			return !excludedSignIds.has( sign.signId );
 		} );
 	}
 
 	#pick() {
 		const candidates = this.#pool();
+
 		if ( 0 === candidates.length ) {
 			return null;
 		}
@@ -160,64 +129,59 @@ export class SignRandomizer extends HTMLElement {
 	}
 
 	#next() {
-		this.#show( this.#pick() );
-	}
+		const sign = this.#pick();
 
-	#show( sign ) {
-		this.#current = sign;
-
-		const viewerEl = this.querySelector( 'sign-viewer' );
-		if ( viewerEl ) {
-			viewerEl.sign = sign;
+		if ( sign ) {
+			this.signId = sign.signId;
+		} else {
+			this.signId = null;
 		}
 
-		const glossEl = this.querySelector( '[data-randomizer-gloss]' );
+		this.#renderCurrent();
+	}
 
-		const listsEl = this.querySelector( 'sign-lists' );
+	#renderCurrent() {
+		const signId = this.signId;
+		const viewerEl = this.viewerEl;
+
+		if ( viewerEl ) {
+			viewerEl.render();
+		}
+
+		const listsEl = closestLists( this );
+
 		if ( listsEl ) {
-			if ( sign ) {
-				listsEl.signId = sign.signId;
-			} else {
-				listsEl.signId = null;
-			}
+			listsEl.render();
 		}
 
 		const excludeEl = this.querySelector( '#randomizer-exclude' );
 		const nextEl = this.querySelector( '#randomizer-next' );
-
-		if ( !sign ) {
-			if ( glossEl ) {
-				glossEl.textContent = 'Geen tekens meer';
-			}
-			if ( excludeEl ) {
-				excludeEl.disabled = true;
-			}
-			if ( nextEl ) {
-				nextEl.disabled = true;
-			}
-			this.#updateCount();
-
-			return;
-		}
+		const sign = getSign( signId );
 
 		if ( excludeEl ) {
-			excludeEl.disabled = false;
-		}
-		if ( nextEl ) {
-			nextEl.disabled = false;
+			excludeEl.disabled = !sign;
 		}
 
-		this.#updateCount();
+		if ( nextEl ) {
+			nextEl.disabled = 0 === this.#pool().length;
+		}
+
+		this.#renderCount();
 	}
 
-	#updateCount() {
+	#renderCount() {
 		const countEl = this.querySelector( '[data-randomizer-count]' );
+
 		if ( !countEl ) {
 			return;
 		}
 
-		const listsEl = this.querySelector( 'sign-lists' );
-		const list = listsEl?.activeList;
+		const listsEl = closestLists( this );
+		let list = null;
+
+		if ( listsEl ) {
+			list = listsEl.activeList();
+		}
 
 		if ( list ) {
 			countEl.textContent = `lijst "${list.name}": ${this.#pool().length} van ${list.signIds.length} tekens`;
@@ -225,55 +189,52 @@ export class SignRandomizer extends HTMLElement {
 			return;
 		}
 
-		const shown = this.#pool().length;
-		countEl.textContent = `${shown} van ${this.#signs.length} tekens beschikbaar · ${this.#excluded.size} uitgesloten`;
+		const excludedSignIds = readExcludedSignIds();
+		const index = getIndex();
+		let total = 0;
+
+		if ( index ) {
+			total = index.signs.length;
+		}
+
+		countEl.textContent = `${this.#pool().length} van ${total} tekens beschikbaar · ${excludedSignIds.size} uitgesloten`;
 	}
 
 	#excludeCurrent() {
-		if ( !this.#current ) {
+		if ( null === this.signId ) {
 			return;
 		}
 
-		this.#excluded.add( this.#current.signId );
-		localStorage.setItem( EXCLUDED_KEY, JSON.stringify( [
-			...this.#excluded,
-		] ) );
+		const excludedSignIds = readExcludedSignIds();
+		excludedSignIds.add( this.signId );
+		writeExcludedSignIds( excludedSignIds );
 		this.#next();
 	}
 
 	#setMode( mode ) {
-		this.#mode = mode;
-		localStorage.setItem( MODE_KEY, JSON.stringify( mode ) );
+		this.mode = mode;
+		writeMode( mode );
 		this.#renderModes();
 
-		const viewerEl = this.querySelector( 'sign-viewer' );
-		if ( viewerEl ) {
-			viewerEl.mode = mode;
-		}
+		const viewerEl = this.viewerEl;
 
-		const wrapperEl = this.querySelector( '[data-randomizer-main]' );
-		if ( wrapperEl ) {
-			wrapperEl.dataset.mode = mode;
+		if ( viewerEl ) {
+			viewerEl.render();
 		}
 	}
 
 	#renderModes() {
 		for ( const btn of this.querySelectorAll( '.sign-randomizer__modes button' ) ) {
-			btn.setAttribute( 'aria-pressed', String( btn.dataset.mode === this.#mode ) );
+			btn.setAttribute( 'aria-pressed', String( btn.dataset.mode === this.mode ) );
 		}
 	}
 
 	#showError( err ) {
 		const errorEl = this.querySelector( '[data-randomizer-error]' );
-		const glossEl = this.querySelector( '[data-randomizer-gloss]' );
 
 		if ( errorEl ) {
 			errorEl.hidden = false;
 			errorEl.textContent = `Kon de index niet laden: ${err.message}. Draai eerst "npm run index" en serveer de map via "npm run serve".`;
-		}
-
-		if ( glossEl ) {
-			glossEl.textContent = 'Fout';
 		}
 	}
 }

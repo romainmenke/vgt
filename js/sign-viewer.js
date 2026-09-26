@@ -1,95 +1,90 @@
+import { closestRandomizer } from './dom.js';
+import { getSign } from './sign-data.js';
+
+const DETAIL_BASE = 'https://woordenboek.vlaamsegebarentaal.be/gloss';
+
 export class SignViewer extends HTMLElement {
-	#meta = {};
-
-	#data = {};
-
-	#onVariantSelected = () => {};
-
-	set data( value ) {
-		this.#data = value;
-		this.#meta = {
-			labels: value.labels,
-			locations: value.locations,
-			handshapeIcons: value.handshapeIcons,
-			locationIcons: value.locationIcons,
-			byGloss: value.byGloss,
-		};
-
-		const metaEl = this.querySelector( 'sign-meta' );
-		if ( metaEl ) {
-			metaEl.data = this.#meta;
-		}
+	get nameEl() {
+		return this.querySelector( 'sign-name' );
 	}
 
-	set onVariantSelected( handler ) {
-		this.#onVariantSelected = handler;
-
-		const metaEl = this.querySelector( 'sign-meta' );
-		if ( metaEl ) {
-			metaEl.onVariantSelected = handler;
-		}
+	get videoEl() {
+		return this.querySelector( 'sign-video' );
 	}
 
-	set mode( value ) {
-		const videoEl = this.querySelector( 'sign-video' );
-		if ( videoEl ) {
-			videoEl.mode = value;
+	get metaEl() {
+		return this.querySelector( 'sign-meta' );
+	}
+
+	get sourceEl() {
+		return this.querySelector( '[data-sign-source]' );
+	}
+
+	render() {
+		const randomizerEl = closestRandomizer( this );
+		let signId = null;
+		let mode = 'learn';
+
+		if ( randomizerEl ) {
+			signId = randomizerEl.signId;
+			mode = randomizerEl.mode;
 		}
 
-		const nameEl = this.querySelector( 'sign-name' );
+		const sign = getSign( signId );
+
+		const nameEl = this.nameEl;
+
 		if ( nameEl ) {
-			if ( 'recognise' === value ) {
-				nameEl.setAttribute( 'reveal', '' );
-			} else {
-				nameEl.removeAttribute( 'reveal' );
-			}
+			nameEl.reveal = 'recognise' === mode;
 		}
 
-		if ( 'recite' === value ) {
-			videoEl?.pause();
-		} else {
-			videoEl?.play();
-		}
-	}
-
-	set sign( value ) {
-		if ( !value ) {
+		if ( !sign ) {
 			this.hidden = true;
+			this.videoEl?.pause();
 
 			return;
 		}
 
 		this.hidden = false;
 
-		const nameEl = this.querySelector( 'sign-name' );
 		if ( nameEl ) {
-			nameEl.sign = value;
+			nameEl.sign = sign;
 		}
 
-		const videoEl = this.querySelector( 'sign-video' );
+		const videoEl = this.videoEl;
+
 		if ( videoEl ) {
-			videoEl.aspect = value.aspect;
-			videoEl.src = value.video;
+			videoEl.aspect = sign.aspect;
+			videoEl.src = sign.video;
+			videoEl.mode = mode;
+
+			if ( 'recite' === mode ) {
+				videoEl.pause();
+			} else {
+				videoEl.play();
+			}
 		}
 
-		const metaEl = this.querySelector( 'sign-meta' );
+		const metaEl = this.metaEl;
+
 		if ( metaEl ) {
-			metaEl.sign = value;
+			metaEl.sign = sign;
 		}
 
-		const sourceEl = this.querySelector( '[data-sign-source]' );
+		const sourceEl = this.sourceEl;
+		const detailUrl = this.#detailUrl( sign );
+
 		if ( sourceEl ) {
-			sourceEl.href = this.#detailUrl( value );
+			sourceEl.href = detailUrl;
 		}
 
-		const videoErrorEl = this.querySelector( '.sign-video__error' );
-		if ( videoErrorEl && videoEl ) {
-			videoEl.errorEl.setAttribute( 'href', this.#detailUrl( value ) );
+		if ( videoEl ) {
+			videoEl.errorHref = detailUrl;
 		}
 	}
 
 	#detailUrl( sign ) {
-		return `https://woordenboek.vlaamsegebarentaal.be/gloss/${encodeURIComponent( sign.glossName )}?sid=${sign.signId}`;
+		return `${DETAIL_BASE}/${encodeURIComponent( sign.glossName )}?sid=${sign.signId}`;
 	}
 }
 
