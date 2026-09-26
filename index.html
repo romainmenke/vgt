@@ -9,20 +9,38 @@
 	<script type="module" src="./js/app.js"></script>
 </head>
 <body>
+	<svg class="icon-sprite" aria-hidden="true" hidden>
+		<symbol id="icon-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+		<symbol id="icon-list-filter" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M7 12h10"/><path d="M11 18h2"/></symbol>
+		<symbol id="icon-slash" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></symbol>
+		<symbol id="icon-share-2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></symbol>
+		<symbol id="icon-shuffle" viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+	</svg>
 	<sign-randomizer data-mode="learn">
 		<header class="sign-randomizer__header">
 			<div class="sign-randomizer__count" data-randomizer-count></div>
 			<div class="sign-randomizer__modes" role="group" aria-label="Modus">
 				<button type="button" data-mode="learn" aria-pressed="true">Leren</button>
 				<button type="button" data-mode="recognise" aria-pressed="false">Herkennen</button>
-				<button type="button" data-mode="recite" aria-pressed="false">Opzeggen</button>
+				<button type="button" data-mode="recite" aria-pressed="false">Gebaren</button>
 			</div>
 			<sign-favorites>
-				<button id="favorites-toggle" type="button" aria-pressed="false" disabled>☆ Favoriet</button>
-				<button id="favorites-filter" type="button" aria-pressed="false">Enkel favorieten</button>
+				<button id="favorites-toggle" type="button" aria-pressed="false" aria-label="Favoriet" title="Favoriet" disabled>
+					<svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>
+				</button>
+				<button id="favorites-filter" type="button" aria-pressed="false" aria-label="Enkel favorieten" title="Enkel favorieten">
+					<svg class="icon" aria-hidden="true"><use href="#icon-list-filter"></use></svg>
+				</button>
 			</sign-favorites>
-			<button id="randomizer-exclude" type="button" disabled>Sluit uit</button>
-			<button id="randomizer-next" type="button" disabled>Volgende</button>
+			<button id="randomizer-exclude" type="button" aria-label="Sluit uit" title="Sluit uit" disabled>
+				<svg class="icon" aria-hidden="true"><use href="#icon-slash"></use></svg>
+			</button>
+			<button id="randomizer-share" type="button" aria-label="Delen" title="Delen">
+				<svg class="icon" aria-hidden="true"><use href="#icon-share-2"></use></svg>
+			</button>
+			<button id="randomizer-next" type="button" aria-label="Volgende" title="Volgende" disabled>
+				<svg class="icon" aria-hidden="true"><use href="#icon-shuffle"></use></svg>
+			</button>
 		</header>
 		<main class="sign-randomizer__main">
 			<sign-viewer hidden>

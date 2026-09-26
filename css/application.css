@@ -4,6 +4,7 @@
 /* Elements */
 @import url("elements/button.css");
 @import url("elements/form.css");
+@import url("elements/icon.css");
 
 /* Modules */
 @import url("modules/sign-randomizer.css");

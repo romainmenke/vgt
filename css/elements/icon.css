@@ -1,0 +1,18 @@
+.icon-sprite {
+	display: none;
+}
+
+.icon {
+	display: block;
+	inline-size: 1.25em;
+	block-size: 1.25em;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+button:has(> .icon) {
+	padding: var(--space-8--rem);
+}

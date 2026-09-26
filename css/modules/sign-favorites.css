@@ -4,3 +4,7 @@ sign-favorites {
 	gap: var(--space-4--rem);
 	align-items: center;
 }
+
+#favorites-toggle[aria-pressed="true"] .icon {
+	fill: currentColor;
+}

@@ -65,12 +65,6 @@ export class SignFavorites extends HTMLElement {
 		if ( toggleEl ) {
 			const isFavorite = null !== signId && favoriteSignIds.has( signId );
 
-			if ( isFavorite ) {
-				toggleEl.textContent = '★ Favoriet';
-			} else {
-				toggleEl.textContent = '☆ Favoriet';
-			}
-
 			toggleEl.setAttribute( 'aria-pressed', String( isFavorite ) );
 			toggleEl.disabled = null === signId;
 		}

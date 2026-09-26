@@ -11,16 +11,73 @@ import { MODES,
 	readFavoriteSignIds,
 	readMode,
 	writeExcludedSignIds,
+	writeFavoriteSignIds,
 	writeMode } from './storage.js';
 
-function readSignIdFromLocation() {
-	const match = /^#sign-(\d+)$/.exec( location.hash );
+const SIGN_ID_PARAM = 'vgt-sign-id';
+const FAVORITE_PARAM = 'vgt-favorite';
+const EXCLUDED_PARAM = 'vgt-excluded';
 
-	if ( !match ) {
+function readFragmentParams() {
+	const searchParams = new URLSearchParams( location.hash.replace( /^#/, '' ) );
+	const params = new Map();
+
+	for ( const [ name, value ] of searchParams ) {
+		const values = params.get( name ) ?? [];
+
+		values.push( value );
+		params.set( name, values );
+	}
+
+	return params;
+}
+
+function writeFragmentParams( params ) {
+	const searchParams = new URLSearchParams();
+
+	for ( const [ name, values ] of params ) {
+		for ( const value of values ) {
+			searchParams.append( name, value );
+		}
+	}
+
+	const query = searchParams.toString();
+	const hash = query ? `#${query}` : '';
+
+	if ( location.hash === hash ) {
+		return;
+	}
+
+	history.replaceState( null, '', `${location.pathname}${location.search}${hash}` );
+}
+
+function readSignIdFromLocation() {
+	const signId = Number( readFragmentParams().get( SIGN_ID_PARAM )?.[0] );
+
+	if ( !Number.isInteger( signId ) || signId <= 0 ) {
 		return null;
 	}
 
-	return Number( match[1] );
+	return signId;
+}
+
+function readSignIdsFromLocation( name ) {
+	const values = readFragmentParams().get( name );
+
+	if ( !values ) {
+		return null;
+	}
+
+	const ids = values
+		.flatMap( ( value ) => {
+			return value.split( ',' );
+		} )
+		.map( Number )
+		.filter( ( value ) => {
+			return Number.isInteger( value ) && value > 0;
+		} );
+
+	return new Set( ids );
 }
 
 export class SignRandomizer extends HTMLElement {
@@ -84,6 +141,8 @@ export class SignRandomizer extends HTMLElement {
 		this.addEventListener( 'variant-selected', this.#variantSelectedHandler );
 		this.addEventListener( 'favorites-change', this.#favoritesChangeHandler );
 		this.addEventListener( 'favorites-filter-change', this.#favoritesFilterChangeHandler );
+		addEventListener( 'hashchange', this.#hashChangeHandler );
+		addEventListener( 'keydown', this.#keydownHandler );
 
 		try {
 			await whenReady();
@@ -98,6 +157,8 @@ export class SignRandomizer extends HTMLElement {
 		this.removeEventListener( 'variant-selected', this.#variantSelectedHandler );
 		this.removeEventListener( 'favorites-change', this.#favoritesChangeHandler );
 		this.removeEventListener( 'favorites-filter-change', this.#favoritesFilterChangeHandler );
+		removeEventListener( 'hashchange', this.#hashChangeHandler );
+		removeEventListener( 'keydown', this.#keydownHandler );
 	}
 
 	attributeChangedCallback( attrName, oldVal, newVal ) {
@@ -144,6 +205,12 @@ export class SignRandomizer extends HTMLElement {
 			return;
 		}
 
+		if ( target.closest( '#randomizer-share' ) ) {
+			this.#share();
+
+			return;
+		}
+
 		const modeBtn = target.closest( '.sign-randomizer__modes button' );
 
 		if ( modeBtn && this.contains( modeBtn ) ) {
@@ -175,6 +242,19 @@ export class SignRandomizer extends HTMLElement {
 		this.#next();
 	};
 
+	#hashChangeHandler = () => {
+		this.#restoreFromLocation();
+	};
+
+	#keydownHandler = ( event ) => {
+		if ( 'ArrowRight' !== event.key || !( event.metaKey || event.ctrlKey ) ) {
+			return;
+		}
+
+		event.preventDefault();
+		this.#next();
+	};
+
 	#pool() {
 		const favoriteSignIds = readFavoriteSignIds();
 		const excludedSignIds = readExcludedSignIds();
@@ -203,6 +283,17 @@ export class SignRandomizer extends HTMLElement {
 	}
 
 	#restoreFromLocation() {
+		const favoriteSignIds = readSignIdsFromLocation( FAVORITE_PARAM );
+		const excludedSignIds = readSignIdsFromLocation( EXCLUDED_PARAM );
+
+		if ( favoriteSignIds ) {
+			writeFavoriteSignIds( favoriteSignIds );
+		}
+
+		if ( excludedSignIds ) {
+			writeExcludedSignIds( excludedSignIds );
+		}
+
 		const signId = readSignIdFromLocation();
 
 		if ( null !== signId && getSign( signId ) ) {
@@ -215,15 +306,54 @@ export class SignRandomizer extends HTMLElement {
 		this.#next();
 	}
 
-	#syncLocation() {
-		const signId = this.signId;
-		const hash = null === signId ? '' : `#sign-${signId}`;
+	#share() {
+		const params = readFragmentParams();
+		const favoriteSignIds = [
+			...readFavoriteSignIds(),
+		].sort( ( a, b ) => {
+			return a - b;
+		} );
+		const excludedSignIds = [
+			...readExcludedSignIds(),
+		].sort( ( a, b ) => {
+			return a - b;
+		} );
 
-		if ( location.hash === hash ) {
-			return;
+		if ( null === this.signId ) {
+			params.delete( SIGN_ID_PARAM );
+		} else {
+			params.set( SIGN_ID_PARAM, [
+				String( this.signId ),
+			] );
 		}
 
-		history.replaceState( null, '', `${location.pathname}${location.search}${hash}` );
+		if ( 0 === favoriteSignIds.length ) {
+			params.delete( FAVORITE_PARAM );
+		} else {
+			params.set( FAVORITE_PARAM, favoriteSignIds.map( String ) );
+		}
+
+		if ( 0 === excludedSignIds.length ) {
+			params.delete( EXCLUDED_PARAM );
+		} else {
+			params.set( EXCLUDED_PARAM, excludedSignIds.map( String ) );
+		}
+
+		writeFragmentParams( params );
+	}
+
+	#syncLocation() {
+		const params = readFragmentParams();
+
+		if ( null === this.signId ) {
+			params.delete( SIGN_ID_PARAM );
+		} else {
+			params.set( SIGN_ID_PARAM, [
+				String( this.signId ),
+			] );
+		}
+
+		writeFragmentParams( params );
 	}
 
 	#next() {
