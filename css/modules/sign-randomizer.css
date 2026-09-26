@@ -1,0 +1,48 @@
+sign-randomizer {
+	display: block flex;
+	flex-direction: column;
+	height: 100dvh;
+}
+
+.sign-randomizer__header {
+	border-bottom: var(--border-default);
+	display: block flex;
+	flex-wrap: wrap;
+	gap: var(--space-8--rem);
+	padding: var(--space-8--rem) var(--space-12--rem);
+	align-items: center;
+}
+
+.sign-randomizer__count {
+	color: var(--color-muted);
+	font-size: 0.8em;
+	margin-right: auto;
+}
+
+.sign-randomizer__modes {
+	display: inline flex;
+}
+
+.sign-randomizer__modes button {
+	border-right-width: 0;
+	border-radius: 0;
+}
+
+.sign-randomizer__modes button:first-child {
+	border-radius: var(--radius-default) 0 0 var(--radius-default);
+}
+
+.sign-randomizer__modes button:last-child {
+	border-right-width: 1px;
+	border-radius: 0 var(--radius-default) var(--radius-default) 0;
+}
+
+.sign-randomizer__main {
+	flex: 1;
+	overflow: auto;
+	min-height: 0;
+}
+
+.sign-randomizer__error {
+	padding: var(--space-32--rem);
+}

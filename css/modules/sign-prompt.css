@@ -1,0 +1,46 @@
+sign-prompt {
+	background-color: rgb(0 0 0 / 0.5);
+	display: block flex;
+	inset: 0;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+}
+
+sign-prompt[hidden] {
+	display: none;
+}
+
+.sign-prompt__dialog {
+	background-color: var(--color-background);
+	border: var(--border-default);
+	border-radius: var(--radius-default);
+	display: block flex;
+	flex-direction: column;
+	gap: var(--space-8--rem);
+	padding: var(--space-16--rem);
+	width: calc(100% - var(--space-32--rem));
+	max-width: 24rem;
+}
+
+.sign-prompt__title {
+	font-weight: 600;
+	margin: 0;
+}
+
+.sign-prompt__label {
+	color: var(--color-muted);
+	font-size: 0.85em;
+}
+
+.sign-prompt__field {
+	font-size: 0.85em;
+}
+
+.sign-prompt__actions {
+	display: block flex;
+	gap: var(--space-8--rem);
+	margin-top: var(--space-4--rem);
+	justify-content: flex-end;
+}

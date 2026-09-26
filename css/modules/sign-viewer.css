@@ -1,0 +1,8 @@
+sign-viewer {
+	display: block flex;
+	flex-direction: column;
+	gap: var(--space-16--rem);
+	margin: 0 auto;
+	padding: var(--space-16--rem);
+	max-width: 700px;
+}

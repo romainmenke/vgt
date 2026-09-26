@@ -1,0 +1,9 @@
+select,
+input {
+	background-color: var(--color-surface);
+	border: var(--border-default);
+	border-radius: var(--radius-default);
+	color: inherit;
+	font: inherit;
+	padding: var(--space-8--rem) var(--space-10--rem);
+}

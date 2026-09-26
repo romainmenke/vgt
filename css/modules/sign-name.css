@@ -1,0 +1,28 @@
+sign-name {
+	cursor: pointer;
+	display: block flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	min-height: 3.2rem;
+}
+
+.sign-name__gloss {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.sign-name__translation {
+	color: var(--color-muted);
+}
+
+sign-name[reveal] .sign-name__gloss,
+sign-name[reveal] .sign-name__translation {
+	filter: blur(7px);
+	user-select: none;
+}
+
+sign-name[reveal][revealed] .sign-name__gloss,
+sign-name[reveal][revealed] .sign-name__translation {
+	filter: none;
+}

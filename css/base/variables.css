@@ -1,0 +1,41 @@
+:root {
+	/* #region Colors */
+	--color-background: rgb(255 255 255);
+	--color-foreground: rgb(0 0 0);
+	--color-muted: rgb(136 136 136);
+	--color-accent: rgb(68 170 136);
+	--color-border: rgb(136 136 136 / 0.4);
+	--color-surface: rgb(136 136 136 / 0.06);
+	--color-surface-hover: rgb(136 136 136 / 0.2);
+	/* #endregion Colors */
+
+	/* #region Typography */
+	--font-sans: system-ui, -apple-system, sans-serif;
+	/* #endregion Typography */
+
+	/* #region Spacers */
+	--space-2--rem: 0.125rem;
+	--space-4--rem: 0.25rem;
+	--space-6--rem: 0.375rem;
+	--space-8--rem: 0.5rem;
+	--space-10--rem: 0.625rem;
+	--space-12--rem: 0.75rem;
+	--space-16--rem: 1rem;
+	--space-24--rem: 1.5rem;
+	--space-32--rem: 2rem;
+	/* #endregion Spacers */
+
+	/* #region Borders */
+	--border-default: 1px solid var(--color-border);
+	--border-accent: 1px solid var(--color-accent);
+	--radius-default: 0.4rem;
+	--radius-pill: 999px;
+	/* #endregion Borders */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: rgb(24 24 24);
+		--color-foreground: rgb(238 238 238);
+	}
+}

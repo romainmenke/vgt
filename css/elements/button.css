@@ -1,0 +1,23 @@
+button {
+	background-color: var(--color-surface);
+	border: var(--border-default);
+	border-radius: var(--radius-default);
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	padding: var(--space-8--rem) var(--space-12--rem);
+}
+
+button:hover {
+	background-color: var(--color-surface-hover);
+}
+
+button:disabled {
+	cursor: not-allowed;
+	opacity: 0.4;
+}
+
+button[aria-pressed="true"] {
+	background-color: rgb(68 170 136 / 0.2);
+	border: var(--border-accent);
+}

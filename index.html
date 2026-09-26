@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VGT Randomizer</title>
+	<link rel="icon" href="data:,">
+	<link rel="stylesheet" href="css/application.css">
+	<script type="module" src="js/app.js"></script>
+</head>
+<body>
+	<sign-randomizer>
+		<header class="sign-randomizer__header">
+			<div class="sign-randomizer__count" data-randomizer-count></div>
+			<div class="sign-randomizer__modes" role="group" aria-label="Modus">
+				<button type="button" data-mode="learn" aria-pressed="true">Leren</button>
+				<button type="button" data-mode="recognise" aria-pressed="false">Herkennen</button>
+				<button type="button" data-mode="recite" aria-pressed="false">Opzeggen</button>
+			</div>
+			<button id="randomizer-exclude" type="button" disabled>Sluit uit</button>
+			<button id="randomizer-next" type="button" disabled>Volgende</button>
+		</header>
+		<main class="sign-randomizer__main" data-randomizer-main data-mode="learn">
+			<sign-viewer hidden>
+				<sign-name>
+					<div class="sign-name__gloss"></div>
+					<div class="sign-name__translation"></div>
+				</sign-name>
+				<sign-video data-mode="learn">
+					<video class="sign-video__media" controls autoplay loop playsinline muted></video>
+					<button type="button" class="sign-video__play-hint" aria-label="Video afspelen">▶</button>
+					<a class="sign-video__error" target="_blank" rel="noopener" hidden>Video kon niet geladen worden. Open op woordenboek.</a>
+				</sign-video>
+				<sign-lists>
+					<select id="lists-select" class="sign-lists__select" aria-label="Filter op lijst">
+						<option value="">Alle tekens</option>
+					</select>
+					<button id="lists-add" type="button">Bewaar in lijst</button>
+					<button id="lists-new" type="button">Nieuwe lijst</button>
+					<button id="lists-remove" type="button">Lijst verwijderen</button>
+					<sign-prompt hidden>
+						<div class="sign-prompt__dialog" role="dialog" aria-modal="true">
+							<h2 class="sign-prompt__title" id="prompt-title"></h2>
+							<label class="sign-prompt__label" id="prompt-label" hidden for="prompt-input"></label>
+							<input class="sign-prompt__input" id="prompt-input" type="text">
+							<div class="sign-prompt__actions">
+								<button id="prompt-cancel" type="button">Annuleer</button>
+								<button id="prompt-ok" type="button">Ok</button>
+							</div>
+						</div>
+					</sign-prompt>
+				</sign-lists>
+				<sign-meta>
+					<section class="sign-meta__section" data-meta-section="handshapes">
+						<h2 class="sign-meta__title">Handvormen</h2>
+						<div class="sign-meta__tiles" data-meta-tiles="handshapes"></div>
+					</section>
+					<section class="sign-meta__section" data-meta-section="locations">
+						<h2 class="sign-meta__title">Locaties</h2>
+						<div class="sign-meta__tiles" data-meta-tiles="locations"></div>
+					</section>
+					<section class="sign-meta__section" data-meta-section="regions">
+						<h2 class="sign-meta__title">Regio</h2>
+						<div class="sign-meta__chips" data-meta-chips="regions"></div>
+					</section>
+					<section class="sign-meta__section" data-meta-section="labels">
+						<h2 class="sign-meta__title">Labels</h2>
+						<div class="sign-meta__chips" data-meta-chips="labels"></div>
+					</section>
+					<section class="sign-meta__section" data-meta-section="variants">
+						<h2 class="sign-meta__title">Varianten</h2>
+						<div class="sign-meta__variants" data-meta-variants></div>
+					</section>
+					<a class="sign-meta__source" data-sign-source target="_blank" rel="noopener">Open op woordenboek</a>
+				</sign-meta>
+			</sign-viewer>
+		</main>
+		<div class="sign-randomizer__error" data-randomizer-error hidden></div>
+	</sign-randomizer>
+</body>
+</html>
