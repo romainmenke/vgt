@@ -3,6 +3,12 @@ import { readLists,
 	writeLists } from './storage.js';
 
 export class SignLists extends HTMLElement {
+	static get observedAttributes() {
+		return [
+			'data-list-id',
+		];
+	}
+
 	get listId() {
 		const value = this.getAttribute( 'data-list-id' );
 
@@ -81,6 +87,20 @@ export class SignLists extends HTMLElement {
 	disconnectedCallback() {
 		this.removeEventListener( 'click', this.#clickHandler );
 		this.removeEventListener( 'change', this.#changeHandler );
+	}
+
+	attributeChangedCallback( attrName, oldVal, newVal ) {
+		if ( 'data-list-id' !== attrName || oldVal === newVal ) {
+			return;
+		}
+
+		this.dispatchEvent( new CustomEvent( 'list-id-change', {
+			bubbles: true,
+			composed: true,
+			detail: {
+				listId: this.listId,
+			},
+		} ) );
 	}
 
 	#clickHandler = ( event ) => {

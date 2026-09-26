@@ -16,13 +16,13 @@ sign-name {
 	color: var(--color-muted);
 }
 
-sign-name[reveal] .sign-name__gloss,
-sign-name[reveal] .sign-name__translation {
+sign-name[conceal] .sign-name__gloss,
+sign-name[conceal] .sign-name__translation {
 	filter: blur(7px);
 	user-select: none;
 }
 
-sign-name[reveal][revealed] .sign-name__gloss,
-sign-name[reveal][revealed] .sign-name__translation {
+sign-name[conceal][revealed] .sign-name__gloss,
+sign-name[conceal][revealed] .sign-name__translation {
 	filter: none;
 }

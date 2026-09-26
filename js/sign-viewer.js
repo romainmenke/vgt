@@ -35,7 +35,7 @@ export class SignViewer extends HTMLElement {
 		const nameEl = this.nameEl;
 
 		if ( nameEl ) {
-			nameEl.reveal = 'recognise' === mode;
+			nameEl.conceal = 'recognise' === mode;
 		}
 
 		if ( !sign ) {

@@ -13,6 +13,13 @@ import { MODES,
 	writeMode } from './storage.js';
 
 export class SignRandomizer extends HTMLElement {
+	static get observedAttributes() {
+		return [
+			'data-sign-id',
+			'data-mode',
+		];
+	}
+
 	get signId() {
 		return readNumberAttribute( this, 'data-sign-id' );
 	}
@@ -63,6 +70,34 @@ export class SignRandomizer extends HTMLElement {
 		this.removeEventListener( 'click', this.#clickHandler );
 		this.removeEventListener( 'variant-selected', this.#variantSelectedHandler );
 		this.removeEventListener( 'lists-change', this.#listsChangeHandler );
+	}
+
+	attributeChangedCallback( attrName, oldVal, newVal ) {
+		if ( oldVal === newVal ) {
+			return;
+		}
+
+		if ( 'data-sign-id' === attrName ) {
+			this.dispatchEvent( new CustomEvent( 'sign-id-change', {
+				bubbles: true,
+				composed: true,
+				detail: {
+					signId: readNumberAttribute( this, 'data-sign-id' ),
+				},
+			} ) );
+
+			return;
+		}
+
+		if ( 'data-mode' === attrName ) {
+			this.dispatchEvent( new CustomEvent( 'mode-change', {
+				bubbles: true,
+				composed: true,
+				detail: {
+					mode: this.mode,
+				},
+			} ) );
+		}
 	}
 
 	#clickHandler = ( event ) => {

@@ -1,15 +1,11 @@
 export class SignName extends HTMLElement {
 	static get observedAttributes() {
 		return [
-			'reveal',
+			'conceal',
 		];
 	}
 
 	#clickHandler = ( event ) => {
-		if ( !this.reveal ) {
-			return;
-		}
-
 		event.preventDefault();
 		this.setAttribute( 'revealed', '' );
 	};
@@ -22,18 +18,18 @@ export class SignName extends HTMLElement {
 		return this.querySelector( '.sign-name__translation' );
 	}
 
-	get reveal() {
-		return this.hasAttribute( 'reveal' );
+	get conceal() {
+		return this.hasAttribute( 'conceal' );
 	}
 
-	set reveal( value ) {
+	set conceal( value ) {
 		if ( value ) {
-			this.setAttribute( 'reveal', '' );
+			this.setAttribute( 'conceal', '' );
 
 			return;
 		}
 
-		this.removeAttribute( 'reveal' );
+		this.removeAttribute( 'conceal' );
 	}
 
 	// Life cycle
@@ -46,7 +42,7 @@ export class SignName extends HTMLElement {
 	}
 
 	attributeChangedCallback( attrName, oldVal, newVal ) {
-		if ( 'reveal' === attrName && null === newVal ) {
+		if ( 'conceal' === attrName && null === newVal ) {
 			this.removeAttribute( 'revealed' );
 		}
 	}
@@ -64,7 +60,11 @@ export class SignName extends HTMLElement {
 			translationEl.textContent = value.translations.join( ', ' );
 		}
 
-		this.setAttribute( 'revealed', '' );
+		if ( this.conceal ) {
+			this.removeAttribute( 'revealed' );
+		} else {
+			this.setAttribute( 'revealed', '' );
+		}
 	}
 }
 
