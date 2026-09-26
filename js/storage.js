@@ -1,5 +1,5 @@
 export const EXCLUDED_KEY = 'vgt-randomizer:excluded';
-export const LISTS_KEY = 'vgt-randomizer:lists';
+export const FAVORITES_KEY = 'vgt-randomizer:favorites';
 export const MODE_KEY = 'vgt-randomizer:mode';
 
 export const MODES = [
@@ -42,18 +42,20 @@ export function writeExcludedSignIds( ids ) {
 	] );
 }
 
-export function readLists() {
-	const lists = readJson( LISTS_KEY, [] );
+export function readFavoriteSignIds() {
+	const ids = readJson( FAVORITES_KEY, [] );
 
-	if ( !Array.isArray( lists ) ) {
-		return [];
+	if ( !Array.isArray( ids ) ) {
+		return new Set();
 	}
 
-	return lists;
+	return new Set( ids );
 }
 
-export function writeLists( lists ) {
-	writeJson( LISTS_KEY, lists );
+export function writeFavoriteSignIds( ids ) {
+	writeJson( FAVORITES_KEY, [
+		...ids,
+	] );
 }
 
 export function readMode() {

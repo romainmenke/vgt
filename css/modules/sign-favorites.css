@@ -1,0 +1,6 @@
+sign-favorites {
+	display: inline flex;
+	flex-wrap: wrap;
+	gap: var(--space-4--rem);
+	align-items: center;
+}

@@ -17,6 +17,10 @@
 				<button type="button" data-mode="recognise" aria-pressed="false">Herkennen</button>
 				<button type="button" data-mode="recite" aria-pressed="false">Opzeggen</button>
 			</div>
+			<sign-favorites>
+				<button id="favorites-toggle" type="button" aria-pressed="false" disabled>☆ Favoriet</button>
+				<button id="favorites-filter" type="button" aria-pressed="false">Enkel favorieten</button>
+			</sign-favorites>
 			<button id="randomizer-exclude" type="button" disabled>Sluit uit</button>
 			<button id="randomizer-next" type="button" disabled>Volgende</button>
 		</header>
@@ -31,25 +35,6 @@
 					<button type="button" class="sign-video__play-hint" aria-label="Video afspelen">▶</button>
 					<a class="sign-video__error" target="_blank" rel="noopener" hidden>Video kon niet geladen worden. Open op woordenboek.</a>
 				</sign-video>
-				<sign-lists>
-					<select id="lists-select" class="sign-lists__select" aria-label="Filter op lijst">
-						<option value="">Alle tekens</option>
-					</select>
-					<button id="lists-add" type="button">Bewaar in lijst</button>
-					<button id="lists-new" type="button">Nieuwe lijst</button>
-					<button id="lists-remove" type="button">Lijst verwijderen</button>
-					<sign-prompt hidden>
-						<div class="sign-prompt__dialog" role="dialog" aria-modal="true">
-							<h2 class="sign-prompt__title" id="prompt-title"></h2>
-							<label class="sign-prompt__label" id="prompt-label" hidden for="prompt-input"></label>
-							<input class="sign-prompt__input" id="prompt-input" type="text">
-							<div class="sign-prompt__actions">
-								<button id="prompt-cancel" type="button">Annuleer</button>
-								<button id="prompt-ok" type="button">Ok</button>
-							</div>
-						</div>
-					</sign-prompt>
-				</sign-lists>
 				<sign-meta>
 					<section class="sign-meta__section" data-meta-section="handshapes">
 						<h2 class="sign-meta__title">Handvormen</h2>

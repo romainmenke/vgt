@@ -4,6 +4,5 @@ import './sign-viewer.js';
 import './sign-name.js';
 import './sign-video.js';
 import './sign-meta.js';
-import './sign-lists.js';
-import './sign-prompt.js';
+import './sign-favorites.js';
 import './icon-tile.js';

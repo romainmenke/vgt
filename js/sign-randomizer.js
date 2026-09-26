@@ -1,4 +1,4 @@
-import { closestLists,
+import { readBooleanAttribute,
 	readNumberAttribute,
 	readStringAttribute,
 	writeNumberAttribute } from './dom.js';
@@ -8,6 +8,7 @@ import { getIndex,
 	whenReady } from './sign-data.js';
 import { MODES,
 	readExcludedSignIds,
+	readFavoriteSignIds,
 	readMode,
 	writeExcludedSignIds,
 	writeMode } from './storage.js';
@@ -17,6 +18,7 @@ export class SignRandomizer extends HTMLElement {
 		return [
 			'data-sign-id',
 			'data-mode',
+			'data-only-favorites',
 		];
 	}
 
@@ -42,12 +44,26 @@ export class SignRandomizer extends HTMLElement {
 		this.setAttribute( 'data-mode', value );
 	}
 
+	get onlyFavorites() {
+		return readBooleanAttribute( this, 'data-only-favorites' );
+	}
+
+	set onlyFavorites( value ) {
+		if ( value ) {
+			this.setAttribute( 'data-only-favorites', '' );
+
+			return;
+		}
+
+		this.removeAttribute( 'data-only-favorites' );
+	}
+
 	get viewerEl() {
 		return this.querySelector( 'sign-viewer' );
 	}
 
-	get listsEl() {
-		return this.querySelector( 'sign-lists' );
+	get favoritesEl() {
+		return this.querySelector( 'sign-favorites' );
 	}
 
 	// Life cycle
@@ -56,7 +72,8 @@ export class SignRandomizer extends HTMLElement {
 		this.#renderModes();
 		this.addEventListener( 'click', this.#clickHandler );
 		this.addEventListener( 'variant-selected', this.#variantSelectedHandler );
-		this.addEventListener( 'lists-change', this.#listsChangeHandler );
+		this.addEventListener( 'favorites-change', this.#favoritesChangeHandler );
+		this.addEventListener( 'favorites-filter-change', this.#favoritesFilterChangeHandler );
 
 		try {
 			await whenReady();
@@ -69,7 +86,8 @@ export class SignRandomizer extends HTMLElement {
 	disconnectedCallback() {
 		this.removeEventListener( 'click', this.#clickHandler );
 		this.removeEventListener( 'variant-selected', this.#variantSelectedHandler );
-		this.removeEventListener( 'lists-change', this.#listsChangeHandler );
+		this.removeEventListener( 'favorites-change', this.#favoritesChangeHandler );
+		this.removeEventListener( 'favorites-filter-change', this.#favoritesFilterChangeHandler );
 	}
 
 	attributeChangedCallback( attrName, oldVal, newVal ) {
@@ -82,7 +100,7 @@ export class SignRandomizer extends HTMLElement {
 				bubbles: true,
 				composed: true,
 				detail: {
-					signId: readNumberAttribute( this, 'data-sign-id' ),
+					signId: this.signId,
 				},
 			} ) );
 
@@ -128,25 +146,35 @@ export class SignRandomizer extends HTMLElement {
 		this.#renderCurrent();
 	};
 
-	#listsChangeHandler = ( event ) => {
+	#favoritesChangeHandler = ( event ) => {
 		event.stopPropagation();
+
+		if ( this.onlyFavorites ) {
+			this.#next();
+
+			return;
+		}
+
+		this.#renderCurrent();
+	};
+
+	#favoritesFilterChangeHandler = ( event ) => {
+		event.stopPropagation();
+		this.onlyFavorites = Boolean( event.detail.onlyFavorites );
 		this.#next();
 	};
 
 	#pool() {
-		const listsEl = closestLists( this );
-
-		if ( listsEl ) {
-			const listSignIds = listsEl.signIdsForActiveList();
-
-			if ( listSignIds ) {
-				return listSignIds.map( ( signId ) => {
-					return getSign( signId );
-				} ).filter( Boolean );
-			}
-		}
-
+		const favoriteSignIds = readFavoriteSignIds();
 		const excludedSignIds = readExcludedSignIds();
+
+		if ( this.onlyFavorites ) {
+			return [
+				...favoriteSignIds,
+			].map( ( signId ) => {
+				return getSign( signId );
+			} ).filter( Boolean );
+		}
 
 		return getSigns().filter( ( sign ) => {
 			return !excludedSignIds.has( sign.signId );
@@ -176,22 +204,21 @@ export class SignRandomizer extends HTMLElement {
 	}
 
 	#renderCurrent() {
-		const signId = this.signId;
 		const viewerEl = this.viewerEl;
 
 		if ( viewerEl ) {
 			viewerEl.render();
 		}
 
-		const listsEl = closestLists( this );
+		const favoritesEl = this.favoritesEl;
 
-		if ( listsEl ) {
-			listsEl.render();
+		if ( favoritesEl ) {
+			favoritesEl.render();
 		}
 
 		const excludeEl = this.querySelector( '#randomizer-exclude' );
 		const nextEl = this.querySelector( '#randomizer-next' );
-		const sign = getSign( signId );
+		const sign = getSign( this.signId );
 
 		if ( excludeEl ) {
 			excludeEl.disabled = !sign;
@@ -211,20 +238,20 @@ export class SignRandomizer extends HTMLElement {
 			return;
 		}
 
-		const listsEl = closestLists( this );
-		let list = null;
+		const favoriteSignIds = readFavoriteSignIds();
+		const excludedSignIds = readExcludedSignIds();
 
-		if ( listsEl ) {
-			list = listsEl.activeList();
-		}
-
-		if ( list ) {
-			countEl.textContent = `lijst "${list.name}": ${this.#pool().length} van ${list.signIds.length} tekens`;
+		if ( this.onlyFavorites ) {
+			const resolvable = [
+				...favoriteSignIds,
+			].filter( ( signId ) => {
+				return Boolean( getSign( signId ) );
+			} ).length;
+			countEl.textContent = `favorieten: ${this.#pool().length} van ${resolvable} tekens`;
 
 			return;
 		}
 
-		const excludedSignIds = readExcludedSignIds();
 		const index = getIndex();
 		let total = 0;
 
@@ -232,7 +259,7 @@ export class SignRandomizer extends HTMLElement {
 			total = index.signs.length;
 		}
 
-		countEl.textContent = `${this.#pool().length} van ${total} tekens beschikbaar · ${excludedSignIds.size} uitgesloten`;
+		countEl.textContent = `${this.#pool().length} van ${total} tekens beschikbaar · ${excludedSignIds.size} uitgesloten · ${favoriteSignIds.size} favorieten`;
 	}
 
 	#excludeCurrent() {

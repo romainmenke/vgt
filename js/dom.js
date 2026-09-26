@@ -6,14 +6,12 @@ export function closestRandomizer( fromEl ) {
 	return fromEl.closest( 'sign-randomizer' );
 }
 
-export function closestLists( fromEl ) {
-	const randomizerEl = closestRandomizer( fromEl );
-
-	if ( !randomizerEl ) {
-		return null;
+export function readBooleanAttribute( el, name ) {
+	if ( !el ) {
+		return false;
 	}
 
-	return randomizerEl.querySelector( 'sign-lists' );
+	return el.hasAttribute( name );
 }
 
 export function readNumberAttribute( el, name ) {
