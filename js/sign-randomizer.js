@@ -13,6 +13,16 @@ import { MODES,
 	writeExcludedSignIds,
 	writeMode } from './storage.js';
 
+function readSignIdFromLocation() {
+	const match = /^#sign-(\d+)$/.exec( location.hash );
+
+	if ( !match ) {
+		return null;
+	}
+
+	return Number( match[1] );
+}
+
 export class SignRandomizer extends HTMLElement {
 	static get observedAttributes() {
 		return [
@@ -77,7 +87,7 @@ export class SignRandomizer extends HTMLElement {
 
 		try {
 			await whenReady();
-			this.#next();
+			this.#restoreFromLocation();
 		} catch ( err ) {
 			this.#showError( err );
 		}
@@ -96,6 +106,7 @@ export class SignRandomizer extends HTMLElement {
 		}
 
 		if ( 'data-sign-id' === attrName ) {
+			this.#syncLocation();
 			this.dispatchEvent( new CustomEvent( 'sign-id-change', {
 				bubbles: true,
 				composed: true,
@@ -189,6 +200,30 @@ export class SignRandomizer extends HTMLElement {
 		}
 
 		return candidates[Math.floor( Math.random() * candidates.length )];
+	}
+
+	#restoreFromLocation() {
+		const signId = readSignIdFromLocation();
+
+		if ( null !== signId && getSign( signId ) ) {
+			this.signId = signId;
+			this.#renderCurrent();
+
+			return;
+		}
+
+		this.#next();
+	}
+
+	#syncLocation() {
+		const signId = this.signId;
+		const hash = null === signId ? '' : `#sign-${signId}`;
+
+		if ( location.hash === hash ) {
+			return;
+		}
+
+		history.replaceState( null, '', `${location.pathname}${location.search}${hash}` );
 	}
 
 	#next() {
