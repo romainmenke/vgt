@@ -32,7 +32,7 @@ function readFragmentParams() {
 	return params;
 }
 
-function writeFragmentParams( params ) {
+function writeFragmentParams( params, push ) {
 	const searchParams = new URLSearchParams();
 
 	for ( const [ name, values ] of params ) {
@@ -48,7 +48,15 @@ function writeFragmentParams( params ) {
 		return;
 	}
 
-	history.replaceState( null, '', `${location.pathname}${location.search}${hash}` );
+	const url = `${location.pathname}${location.search}${hash}`;
+
+	if ( push ) {
+		history.pushState( null, '', url );
+
+		return;
+	}
+
+	history.replaceState( null, '', url );
 }
 
 function readSignIdFromLocation() {
@@ -133,6 +141,8 @@ export class SignRandomizer extends HTMLElement {
 		return this.querySelector( 'sign-favorites' );
 	}
 
+	#restoring = false;
+
 	// Life cycle
 	async connectedCallback() {
 		this.mode = readMode();
@@ -167,7 +177,7 @@ export class SignRandomizer extends HTMLElement {
 		}
 
 		if ( 'data-sign-id' === attrName ) {
-			this.#syncLocation();
+			this.#syncLocation( !this.#restoring );
 			this.dispatchEvent( new CustomEvent( 'sign-id-change', {
 				bubbles: true,
 				composed: true,
@@ -234,6 +244,7 @@ export class SignRandomizer extends HTMLElement {
 		}
 
 		this.#renderCurrent();
+		this.#syncLocation( false );
 	};
 
 	#favoritesFilterChangeHandler = ( event ) => {
@@ -283,27 +294,33 @@ export class SignRandomizer extends HTMLElement {
 	}
 
 	#restoreFromLocation() {
-		const favoriteSignIds = readSignIdsFromLocation( FAVORITE_PARAM );
-		const excludedSignIds = readSignIdsFromLocation( EXCLUDED_PARAM );
+		this.#restoring = true;
 
-		if ( favoriteSignIds ) {
-			writeFavoriteSignIds( favoriteSignIds );
+		try {
+			const favoriteSignIds = readSignIdsFromLocation( FAVORITE_PARAM );
+			const excludedSignIds = readSignIdsFromLocation( EXCLUDED_PARAM );
+
+			if ( favoriteSignIds ) {
+				writeFavoriteSignIds( favoriteSignIds );
+			}
+
+			if ( excludedSignIds ) {
+				writeExcludedSignIds( excludedSignIds );
+			}
+
+			const signId = readSignIdFromLocation();
+
+			if ( null !== signId && getSign( signId ) ) {
+				this.signId = signId;
+				this.#renderCurrent();
+
+				return;
+			}
+
+			this.#next();
+		} finally {
+			this.#restoring = false;
 		}
-
-		if ( excludedSignIds ) {
-			writeExcludedSignIds( excludedSignIds );
-		}
-
-		const signId = readSignIdFromLocation();
-
-		if ( null !== signId && getSign( signId ) ) {
-			this.signId = signId;
-			this.#renderCurrent();
-
-			return;
-		}
-
-		this.#next();
 	}
 
 	#share() {
@@ -339,11 +356,11 @@ export class SignRandomizer extends HTMLElement {
 			params.set( EXCLUDED_PARAM, excludedSignIds.map( String ) );
 		}
 
-		writeFragmentParams( params );
+		writeFragmentParams( params, false );
 	}
 
-	#syncLocation() {
-		const params = readFragmentParams();
+	#syncLocation( push ) {
+		const params = this.#restoring ? readFragmentParams() : new Map();
 
 		if ( null === this.signId ) {
 			params.delete( SIGN_ID_PARAM );
@@ -353,11 +370,13 @@ export class SignRandomizer extends HTMLElement {
 			] );
 		}
 
-		writeFragmentParams( params );
+		writeFragmentParams( params, push );
 	}
 
 	#next() {
 		const sign = this.#pick();
+
+		this.#syncLocation( false );
 
 		if ( sign ) {
 			this.signId = sign.signId;
@@ -366,6 +385,7 @@ export class SignRandomizer extends HTMLElement {
 		}
 
 		this.#renderCurrent();
+		this.#syncLocation( !this.#restoring );
 	}
 
 	#renderCurrent() {

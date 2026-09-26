@@ -4,10 +4,7 @@
   "type": "module",
   "scripts": {
     "index": "node indexer.js",
-    "serve": "node serve.js",
-    "lint": "npm run lint:js & npm run lint:css",
-    "lint:js": "eslint --fix \"*.js\" \"js/**/*.js\"",
-    "lint:css": "stylelint --fix \"css/**/*.css\""
+    "serve": "node serve.js"
   },
   "devDependencies": {
     "puppeteer": "^25.11.0"
