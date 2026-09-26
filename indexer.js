@@ -16,7 +16,7 @@ const REGION = 'Vlaanderen';
 const PAGE_SIZE = 100;
 const MIN_INTERVAL_MS = 500;
 const SNAPSHOT_EVERY = 50;
-const OUTPUT = path.join( path.dirname( fileURLToPath( import.meta.url ) ), 'signs.json' );
+const OUTPUT = path.join( path.dirname( fileURLToPath( import.meta.url ) ), 'docs', 'randomizer', 'signs.json' );
 
 let previousRequest = 0;
 

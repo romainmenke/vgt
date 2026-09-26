@@ -3,8 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "index": "node indexer.js",
-    "serve": "node serve.js"
+    "index": "node indexer.js"
   },
   "devDependencies": {
     "puppeteer": "^25.11.0"
