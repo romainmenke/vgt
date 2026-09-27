@@ -13,6 +13,15 @@ const LABELS_API = `${BASE}/api/labels`;
 const LOCATIONS_API = `${BASE}/api/locations`;
 const GLOSSES_API = `${BASE}/api/glosses`;
 const REGION = 'Vlaanderen';
+const ALL_REGIONS = [
+	'Antwerpen',
+	'Limburg',
+	'Oost-Vlaanderen',
+	'Unknown',
+	'Vlaams-Brabant',
+	'Vlaanderen',
+	'West-Vlaanderen',
+];
 const PAGE_SIZE = 100;
 const MIN_INTERVAL_MS = 500;
 const SNAPSHOT_EVERY = 50;
@@ -110,9 +119,8 @@ const NON_PERSON_NAME_GLOSSES = new Set( [
 
 let previousRequest = 0;
 
-async function rateLimitedRequest( url ) {
-	const startedAt = Date.now();
-	const wait = MIN_INTERVAL_MS - ( startedAt - previousRequest );
+async function waitForRateLimit() {
+	const wait = MIN_INTERVAL_MS - ( Date.now() - previousRequest );
 
 	if ( 0 < wait ) {
 		await new Promise( ( resolve ) => {
@@ -122,6 +130,10 @@ async function rateLimitedRequest( url ) {
 
 	// eslint-disable-next-line require-atomic-updates
 	previousRequest = Date.now();
+}
+
+async function rateLimitedRequest( url ) {
+	await waitForRateLimit();
 
 	const res = await fetch( url, {
 		headers: {
@@ -148,7 +160,7 @@ async function rateLimitedText( url ) {
 	return res.text();
 }
 
-function buildUrl( from, size, categories = [] ) {
+function buildUrl( from, size, categories = [], region = REGION ) {
 	const params = new URLSearchParams( {
 		c: JSON.stringify( categories ),
 		from: String( from ),
@@ -159,7 +171,7 @@ function buildUrl( from, size, categories = [] ) {
 		mode: 'ANDExact',
 		q: '[]',
 		r: JSON.stringify( [
-			REGION,
+			region,
 		] ),
 		size: String( size ),
 		e: '[]',
@@ -208,7 +220,7 @@ async function probeAspect( url ) {
 	return null;
 }
 
-async function addAspects( byId ) {
+async function addAspects( byId, snapshot ) {
 	const pending = [
 		...byId.values(),
 	].filter( ( sign ) => {
@@ -223,11 +235,16 @@ async function addAspects( byId ) {
 	let done = 0;
 
 	for ( const sign of pending ) {
+		await waitForRateLimit();
 		sign.aspect = await probeAspect( sign.video );
 		done++;
 
 		if ( 0 === done % 25 ) {
 			process.stdout.write( `\rprobed ${done}/${pending.length} videos` );
+		}
+
+		if ( snapshot && 0 === done % 250 ) {
+			await snapshot();
 		}
 	}
 
@@ -282,53 +299,56 @@ async function fetchMap( url, fallback, pick ) {
 }
 
 async function indexSigns( byId ) {
-	let from = 0;
-	let total = Infinity;
+	for ( const region of ALL_REGIONS ) {
+		let from = 0;
+		let total = Infinity;
 
-	while ( from < total ) {
-		const data = await rateLimitedFetch( buildUrl( from, PAGE_SIZE ) );
-		total = data.totalNumberSignOverviews;
-		const page = data.signOverviews ?? [];
+		while ( from < total ) {
+			const data = await rateLimitedFetch( buildUrl( from, PAGE_SIZE, [], region ) );
+			total = data.totalNumberSignOverviews;
+			const page = data.signOverviews ?? [];
 
-		for ( const sign of page ) {
-			if ( false === sign.regions?.includes( REGION ) ) {
-				continue;
+			for ( const sign of page ) {
+				const next = slim( sign );
+
+				if ( sign.regions?.includes( REGION ) ) {
+					next.is_region_vlaanderen = true;
+				}
+
+				const previous = byId.get( sign.signId );
+
+				if ( previous ) {
+					if ( 'handshape' in previous ) {
+						next.handshape = previous.handshape;
+						next.location = previous.location;
+					}
+
+					if ( 'aspect' in previous ) {
+						next.aspect = previous.aspect;
+					}
+
+					if ( 'is_placename' in previous ) {
+						next.is_placename = previous.is_placename;
+					}
+
+					if ( 'is_person_name' in previous ) {
+						next.is_person_name = previous.is_person_name;
+					}
+				}
+
+				byId.set( sign.signId, next );
 			}
 
-			const next = slim( sign );
-			const previous = byId.get( sign.signId );
+			from += PAGE_SIZE;
+			process.stdout.write( `\rindexed ${byId.size} signs (${region} ${from}/${total})` );
 
-			if ( previous ) {
-				if ( 'handshape' in previous ) {
-					next.handshape = previous.handshape;
-					next.location = previous.location;
-				}
-
-				if ( 'aspect' in previous ) {
-					next.aspect = previous.aspect;
-				}
-
-				if ( 'is_placename' in previous ) {
-					next.is_placename = previous.is_placename;
-				}
-
-				if ( 'is_person_name' in previous ) {
-					next.is_person_name = previous.is_person_name;
-				}
+			if ( 0 === page.length ) {
+				break;
 			}
-
-			byId.set( sign.signId, next );
 		}
 
-		from += PAGE_SIZE;
-		process.stdout.write( `\rindexed ${byId.size} signs (page offset ${from}/${total})` );
-
-		if ( 0 === page.length ) {
-			break;
-		}
+		process.stdout.write( '\n' );
 	}
-
-	process.stdout.write( '\n' );
 }
 
 async function fetchCategorySignIds( category ) {
@@ -482,9 +502,13 @@ async function main() {
 	console.log( 'Building handshape/location icons…' );
 	const icons = await buildIcons( rateLimitedText, existingFile ?? {} );
 
+	const snapshot = async() => {
+		await writeFile( OUTPUT, JSON.stringify( assemble( byId, labels, locations, icons ), null, 2 ) + '\n' );
+	};
+
 	await enrich( byId, labels, locations, icons );
 	await addNameFlags( byId );
-	await addAspects( byId );
+	await addAspects( byId, snapshot );
 
 	const result = assemble( byId, labels, locations, icons );
 	await writeFile( OUTPUT, JSON.stringify( result, null, 2 ) + '\n' );

@@ -276,19 +276,22 @@ export class SignRandomizer extends HTMLElement {
 
 	#pool() {
 		const favoriteSignIds = readFavoriteSignIds();
-		const excludedSignIds = readExcludedSignIds();
 
 		if ( this.onlyFavorites ) {
 			return [
 				...favoriteSignIds,
 			].map( ( signId ) => {
 				return getSign( signId );
-			} ).filter( ( sign ) => {
-				return sign && !this.#isExcluded( sign );
-			} );
+			} ).filter( Boolean );
 		}
 
+		const excludedSignIds = readExcludedSignIds();
+
 		return getSigns().filter( ( sign ) => {
+			if ( true !== sign.is_region_vlaanderen ) {
+				return false;
+			}
+
 			return !excludedSignIds.has( sign.signId ) && !this.#isExcluded( sign );
 		} );
 	}
@@ -452,7 +455,7 @@ export class SignRandomizer extends HTMLElement {
 
 		if ( index ) {
 			total = index.signs.filter( ( sign ) => {
-				return !this.#isExcluded( sign );
+				return true === sign.is_region_vlaanderen && !this.#isExcluded( sign );
 			} ).length;
 		}
 
