@@ -266,6 +266,14 @@ export class SignRandomizer extends HTMLElement {
 		this.#next();
 	};
 
+	#isExcluded( sign ) {
+		if ( sign.is_placename || sign.is_person_name ) {
+			return true;
+		}
+
+		return ( sign.labels ?? [] ).includes( 'Outdated' );
+	}
+
 	#pool() {
 		const favoriteSignIds = readFavoriteSignIds();
 		const excludedSignIds = readExcludedSignIds();
@@ -275,11 +283,13 @@ export class SignRandomizer extends HTMLElement {
 				...favoriteSignIds,
 			].map( ( signId ) => {
 				return getSign( signId );
-			} ).filter( Boolean );
+			} ).filter( ( sign ) => {
+				return sign && !this.#isExcluded( sign );
+			} );
 		}
 
 		return getSigns().filter( ( sign ) => {
-			return !excludedSignIds.has( sign.signId );
+			return !excludedSignIds.has( sign.signId ) && !this.#isExcluded( sign );
 		} );
 	}
 
@@ -441,7 +451,9 @@ export class SignRandomizer extends HTMLElement {
 		let total = 0;
 
 		if ( index ) {
-			total = index.signs.length;
+			total = index.signs.filter( ( sign ) => {
+				return !this.#isExcluded( sign );
+			} ).length;
 		}
 
 		countEl.textContent = `${this.#pool().length} van ${total} tekens beschikbaar · ${excludedSignIds.size} uitgesloten · ${favoriteSignIds.size} favorieten`;

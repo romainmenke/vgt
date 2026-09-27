@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T12:19:21.622Z",
+  "generatedAt": "2026-09-27T08:43:42.880Z",
   "region": "Vlaanderen",
   "source": "https://woordenboek.vlaamsegebarentaal.be/search?r=Vlaanderen",
   "count": 5475,
@@ -777,7 +777,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AB/ABU-DHABI(ARE)-A-123.mp4",
       "handshape": "1;1\"",
       "location": "Nose",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 125,
@@ -1506,7 +1507,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AF/AFGHANISTAN-F-244.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 247,
@@ -1553,7 +1555,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AF/AFRIKA-D-257.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 262,
@@ -2029,7 +2032,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AK/AKEN(GER)-A-322.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 323,
@@ -2091,7 +2095,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/AL(NOR)-A-327.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 335,
@@ -2123,7 +2128,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALASKA(USA)-B-338.mp4",
       "handshape": "A;A\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 340,
@@ -2138,7 +2144,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALBANIE-B-340.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 349,
@@ -2635,7 +2642,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AM/AMSTERDAM(NLD)-A-458.mp4",
       "handshape": "1;1\"",
       "location": "BackOfHand",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 459,
@@ -2652,7 +2660,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AM/AMSTERDAM(NLD)-B-459.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 460,
@@ -2716,7 +2725,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BERT-ANCIAUX-A-478.mp4",
       "handshape": "1;1\"",
       "location": "Cheek",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 480,
@@ -2777,7 +2787,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AN/ANDORRA-A-490.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 492,
@@ -2949,7 +2960,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AN/ANTWERPEN(ANT)-A-516.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_placename": true
     },
     {
       "signId": 522,
@@ -3282,7 +3294,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AR/ARGENTINIE-A-626.mp4",
       "handshape": "5;5\"",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 627,
@@ -3297,7 +3310,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AR/ARGENTINIE-B-627.mp4",
       "handshape": "5;5\"",
       "location": "LowerArm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 631,
@@ -3372,7 +3386,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AR/ARMENIE-C-640.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 641,
@@ -3605,7 +3620,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AS/ASTERIX-A-699.mp4",
       "handshape": "5;5\"",
       "location": "Cheek",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 712,
@@ -3742,7 +3758,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AU/AUSTRALIE-B-751.mp4",
       "handshape": "C8",
       "location": "Belly",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 757,
@@ -3963,7 +3980,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AY/AYWAILLE(BEL)-A-797.mp4",
       "handshape": "1;1\"",
       "location": "Chest",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_placename": true
     },
     {
       "signId": 798,
@@ -3979,7 +3997,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AZ/AZERBEIDZJAN-A-798.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 800,
@@ -3994,7 +4013,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AZ/AZIE-B-800.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 801,
@@ -4012,7 +4032,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AZ/AZIE-C-801.mp4",
       "handshape": "1;1\"",
       "location": "Eye",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 813,
@@ -4288,7 +4309,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BAHREIN-A-885.mp4",
       "handshape": "S",
       "location": "Belly",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 886,
@@ -4408,7 +4430,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BALI(IDN)-A-906.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 907,
@@ -4453,7 +4476,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BALKAN-A-912.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 914,
@@ -4703,7 +4727,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BARCELONA(ESP)-A-995.mp4",
       "handshape": "5;5\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 999,
@@ -5474,7 +5499,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BELGIE-A-1185.mp4",
       "handshape": "B;B\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 1186,
@@ -5832,7 +5858,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MONS(BEL)-B-1244.mp4",
       "handshape": "A;A\"",
       "location": "BackOfHand",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 1248,
@@ -5881,7 +5908,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BERLIJN(GER)-A-1258.mp4",
       "handshape": "bO;bO+",
       "location": "Forehead",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_placename": true
     },
     {
       "signId": 1259,
@@ -7605,7 +7633,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BL/BLANKENBERGE(WVL)-C-1579.mp4",
       "handshape": "C8",
       "location": "Cheek",
-      "aspect": 1.233
+      "aspect": 1.233,
+      "is_placename": true
     },
     {
       "signId": 1584,
@@ -8386,7 +8415,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BORDEAUX(FRA)-A-1797.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 1801,
@@ -8647,7 +8677,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BOSNIE-HERZEGOVINA-A-1846.mp4",
       "handshape": "B;B\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 1847,
@@ -8662,7 +8693,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BOSNIE-HERZEGOVINA-B-1847.mp4",
       "handshape": "S",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 1867,
@@ -8876,7 +8908,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRAZILIE-A-1959.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 1960,
@@ -8891,7 +8924,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRAZILIE-B-1960.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 1968,
@@ -9244,7 +9278,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRUGGE(WVL)-A-2056.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.233
+      "aspect": 1.233,
+      "is_placename": true
     },
     {
       "signId": 2059,
@@ -9290,7 +9325,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRUSSEL(BXL)-A-2077.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2078,
@@ -9305,7 +9341,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRUSSEL(BXL)-B-2078.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2093,
@@ -9474,7 +9511,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BU/BULGARIJE-A-2119.mp4",
       "handshape": "C;OB",
       "location": "Cheek",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_placename": true
     },
     {
       "signId": 2121,
@@ -9725,7 +9763,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CANADA-C-2203.mp4",
       "handshape": "A;A\"",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2215,
@@ -9862,7 +9901,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CATALONIE(ESP)-A-2243.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2246,
@@ -10196,7 +10236,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CH/CHINA-A-2324.mp4",
       "handshape": "1;1\"",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2326,
@@ -10511,7 +10552,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HI/HILLARY-CLINTON-A-2402.mp4",
       "handshape": "H;H\"",
       "location": "Ear",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_person_name": true
     },
     {
       "signId": 2404,
@@ -10787,7 +10829,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CO/COLOMBIA-A-2444.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2448,
@@ -11149,7 +11192,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CO/CONGO-A-2504.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2507,
@@ -11410,7 +11454,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CO/CORSICA(FRA)-A-2548.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2551,
@@ -11425,7 +11470,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CO/COSTA-RICA-A-2551.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_placename": true
     },
     {
       "signId": 2561,
@@ -11440,7 +11486,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TH/THIBAUT-COURTOIS-A-2561.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 2564,
@@ -11606,7 +11653,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CU/CUBA-B-2594.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2601,
@@ -11714,7 +11762,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CY/CYPRUS-G-2616.mp4",
       "handshape": "bC;bC+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 2619,
@@ -12184,7 +12233,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BART-DE-WEVER-B-2745.mp4",
       "handshape": "5;5\"",
       "location": "BackOfHand",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_person_name": true
     },
     {
       "signId": 2748,
@@ -12756,7 +12806,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DI/DI-RUPO-ELIO-A-2877.mp4",
       "handshape": "T;T+",
       "location": "Neck",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_person_name": true
     },
     {
       "signId": 2880,
@@ -13708,7 +13759,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DO/DOORNIK(BEL)-A-3102.mp4",
       "handshape": "H;H\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3104,
@@ -13866,7 +13918,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DO/DORP-B-3122.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_placename": true
     },
     {
       "signId": 3128,
@@ -14545,7 +14598,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DU/DUBLIN(IRL)-A-3260.mp4",
       "handshape": "bO;bO+",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3269,
@@ -14686,7 +14740,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DU/DUITSLAND-A-3287.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3291,
@@ -15261,7 +15316,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/EG/EGYPTE-A-3421.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3427,
@@ -15339,7 +15395,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/EI/EINDHOVEN(NLD)-A-3464.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3468,
@@ -15372,7 +15429,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALBERT-EINSTEIN-A-3469.mp4",
       "handshape": "1;1\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 3471,
@@ -15637,7 +15695,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/EN/ENGELAND-A-3547.mp4",
       "handshape": "1;1\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3554,
@@ -15828,7 +15887,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ER/ERGENS-A-3593.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3599,
@@ -15922,7 +15982,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ES/ESTLAND-B-3629.mp4",
       "handshape": "A;A\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3632,
@@ -15984,7 +16045,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/EU/EU-A-3642.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3643,
@@ -16029,7 +16091,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/EU/EUROPA-A-3646.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3656,
@@ -16689,7 +16752,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FI/FINLAND-A-3870.mp4",
       "handshape": "1;1\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3877,
@@ -17154,7 +17218,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FR/FRANKRIJK-F-3980.mp4",
       "handshape": "T;T+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 3981,
@@ -18306,7 +18371,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GE/GENT(OVL)-A-4226.mp4",
       "handshape": "5;5\"",
       "location": "BackOfHand",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 4227,
@@ -18321,7 +18387,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GE/GENT(OVL)-B-4227.mp4",
       "handshape": "8",
       "location": "BackOfHand",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 4235,
@@ -18915,7 +18982,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GI/GIBRALTAR(GBR)-B-4332.mp4",
       "handshape": "5;5\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 4333,
@@ -19594,7 +19662,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GR/GRIEKENLAND-B-4514.mp4",
       "handshape": "1;1\"",
       "location": "BackOfHand",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 4526,
@@ -20642,7 +20711,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HA/HASSELT(LIM)-A-4790.mp4",
       "handshape": "H;H\"",
       "location": "Neck",
-      "aspect": 1.337
+      "aspect": 1.337,
+      "is_placename": true
     },
     {
       "signId": 4795,
@@ -20913,7 +20983,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HE/HELSINKI(FIN)-A-4861.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 4865,
@@ -20958,7 +21029,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HE/HENEGOUWEN(BEL)-B-4880.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 4897,
@@ -21600,7 +21672,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HO/HONG-KONG-A-5061.mp4",
       "handshape": "S",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5065,
@@ -22093,7 +22166,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IB/IBIZA(ESP)-B-5207.mp4",
       "handshape": "5;5\"",
       "location": "Belly",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5209,
@@ -22252,7 +22326,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IE/IEPER(WVL)-A-5225.mp4",
       "handshape": "Y",
       "location": "NeutralSpace",
-      "aspect": 1.233
+      "aspect": 1.233,
+      "is_placename": true
     },
     {
       "signId": 5228,
@@ -22267,7 +22342,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IE/IERLAND-B-5228.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5234,
@@ -22549,7 +22625,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IN/INDIA-A-5295.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5296,
@@ -22568,7 +22645,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IN/INDIA-B-5296.mp4",
       "handshape": "A;A\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5298,
@@ -22615,7 +22693,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IN/INDONESIE-A-5303.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5317,
@@ -23171,7 +23250,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IR/IRAN-A-5432.mp4",
       "handshape": "A;A\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5438,
@@ -23266,7 +23346,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IS/ISRAEL-B-5446.mp4",
       "handshape": "C;OB",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5464,
@@ -23424,7 +23505,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JE/JEZUS-A-5520.mp4",
       "handshape": "8",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 5521,
@@ -23458,7 +23540,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JO/JOEGOSLAVIE-A-5527.mp4",
       "handshape": "B;B\"",
       "location": "Shoulders",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5530,
@@ -23488,7 +23571,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JO/JOMMEKE-A-5532.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 5533,
@@ -23632,7 +23716,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JU/JULIUS-CAESAR-A-5568.mp4",
       "handshape": "H;H\"",
       "location": "Ear",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 5569,
@@ -24372,7 +24457,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KA/KAZACHSTAN-A-5767.mp4",
       "handshape": "bY;Y1",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 5769,
@@ -25725,7 +25811,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALBERT-II-B-6216.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 6221,
@@ -25741,7 +25828,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FI/FILIP-I-A-6221.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 6222,
@@ -25757,7 +25845,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WI/WILLEM-ALEXANDER-A-6222.mp4",
       "handshape": "5;5\"",
       "location": "Cheek",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 6231,
@@ -25774,7 +25863,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MATHILDE-A-6231.mp4",
       "handshape": "V;V\"",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 6232,
@@ -25790,7 +25880,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MAXIMA-A-6232.mp4",
       "handshape": "W;W\"",
       "location": "Eye",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 6238,
@@ -25927,7 +26018,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KO/KOPENHAGEN(DNK)-A-6289.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 6292,
@@ -26033,7 +26125,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZU/ZUID-KOREA-C-6307.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 6309,
@@ -27083,7 +27176,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LA/LAPLAND-A-6631.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.778
+      "aspect": 1.778,
+      "is_placename": true
     },
     {
       "signId": 6632,
@@ -27098,7 +27192,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LA/LAPLAND-B-6632.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 6635,
@@ -27623,7 +27718,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LE/LEUVEN(VLB)-A-6786.mp4",
       "handshape": "H;H\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 6788,
@@ -28024,7 +28120,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LI/LIMBURG-A-6896.mp4",
       "handshape": "1;1\"",
       "location": "Neck",
-      "aspect": 1.337
+      "aspect": 1.337,
+      "is_placename": true
     },
     {
       "signId": 6911,
@@ -28242,7 +28339,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LO/LONDEN(GBR)-A-6982.mp4",
       "handshape": "1;1\"",
       "location": "Ear",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 6983,
@@ -28442,7 +28540,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LU/LUIK(BEL)-C-7050.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7053,
@@ -28473,7 +28572,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LU/LUKAKU-ROMELU-A-7062.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 7065,
@@ -28523,7 +28623,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LU/LUXEMBURG-I-7079.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7089,
@@ -28801,7 +28902,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MACAU-A-7139.mp4",
       "handshape": "1;1\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7148,
@@ -28848,7 +28950,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MADRID(ESP)-A-7157.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7165,
@@ -29107,7 +29210,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MALEISIE-A-7206.mp4",
       "handshape": "B;B\"",
       "location": null,
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7211,
@@ -29137,7 +29241,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MALTA-B-7213.mp4",
       "handshape": "H;H\"",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7221,
@@ -29213,7 +29318,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MANILA(PHL)-A-7241.mp4",
       "handshape": "M",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7243,
@@ -29289,7 +29395,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MAROKKO-C-7269.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7278,
@@ -30135,7 +30242,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ME/MEXICO-D-7535.mp4",
       "handshape": "V;V\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7540,
@@ -30336,7 +30444,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MI/MIDDEN-OOSTEN-A-7569.mp4",
       "handshape": "8",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 7573,
@@ -31105,7 +31214,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MOL(ANT)-A-7722.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 7726,
@@ -31122,7 +31232,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SI/SINT-JANS-MOLENBEEK(BXL)-A-7726.mp4",
       "handshape": "1;1\"",
       "location": "BackOfHand",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 7732,
@@ -31263,7 +31374,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MOSKOU(RUS)-A-7769.mp4",
       "handshape": "A;A\"",
       "location": "Cheek",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 7772,
@@ -31510,7 +31622,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MU/MURCIA(ESP)-A-7836.mp4",
       "handshape": "B;B\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 7837,
@@ -31900,7 +32013,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NA/NAPOLEON-A-7949.mp4",
       "handshape": "B;B\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 7951,
@@ -31995,7 +32109,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NE/NEDERLAND-A-7970.mp4",
       "handshape": "C;OB",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 7977,
@@ -32134,7 +32249,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NE/NEPAL-A-8001.mp4",
       "handshape": "bC;bC+",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8006,
@@ -32320,7 +32436,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NE/NEW-YORK(USA)-A-8027.mp4",
       "handshape": "Y",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8036,
@@ -32487,7 +32604,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NI/NIEUW-ZEELAND-A-8059.mp4",
       "handshape": "B;B\"",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8067,
@@ -32563,7 +32681,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NI/NIGERIA-A-8094.mp4",
       "handshape": "H;H\"",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8097,
@@ -32797,7 +32916,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NO/NOORWEGEN-A-8144.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8154,
@@ -33013,7 +33133,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BARACK-OBAMA-A-8184.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 8187,
@@ -33108,7 +33229,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OE/OEZBEKISTAN-A-8220.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8222,
@@ -34498,7 +34620,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OO/OOST-VLAANDEREN-A-8512.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8519,
@@ -34513,7 +34636,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OO/OOSTENDE(WVL)-A-8519.mp4",
       "handshape": "1;1\"",
       "location": "Cheek",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8526,
@@ -35685,7 +35809,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OS/OSLO(NOR)-A-8746.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8747,
@@ -36273,7 +36398,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PANAMA-A-8947.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 8969,
@@ -36517,7 +36643,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PARIJS(FRA)-A-9005.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 9006,
@@ -36532,7 +36659,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PARIJS(FRA)-B-9006.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 9019,
@@ -37133,7 +37261,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PE/PERU-D-9153.mp4",
       "handshape": "V;V\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 9172,
@@ -37178,7 +37307,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PABLO-PICASSO-A-9196.mp4",
       "handshape": "bO;bO+",
       "location": null,
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 9200,
@@ -38360,7 +38490,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PO/PORTUGAL-A-9479.mp4",
       "handshape": "W;W\"",
       "location": "Belly",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 9487,
@@ -39154,7 +39285,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PR/PROVINCIE-A-9641.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 9648,
@@ -40364,7 +40496,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RI/RIGA(LVA)-A-9971.mp4",
       "handshape": "1;1\"",
       "location": "Neck",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 9977,
@@ -40625,7 +40758,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RO/ROEMENIE-A-10069.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10074,
@@ -40845,7 +40979,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RO/ROME(ITA)-A-10105.mp4",
       "handshape": "H;H\"",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10110,
@@ -41110,7 +41245,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RO/ROTTERDAM(NDL)-A-10176.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10185,
@@ -41373,7 +41509,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RU/RUSLAND-D-10247.mp4",
       "handshape": "1;1\"",
       "location": "Nose",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10250,
@@ -42534,7 +42671,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SC/SCHORRE-A-10596.mp4",
       "handshape": "5;5\"",
       "location": "BackOfHand",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10603,
@@ -42594,7 +42732,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SC/SCHOTLAND-A-10607.mp4",
       "handshape": "S",
       "location": "Shoulders",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10609,
@@ -42612,7 +42751,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SC/SCHOTLAND-C-10609.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10610,
@@ -43029,7 +43169,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SE/SENEGAL-A-10699.mp4",
       "handshape": "S",
       "location": "Wrist",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10700,
@@ -43451,7 +43592,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SI/SINT-PETERSBURG(RUS)-B-10830.mp4",
       "handshape": "5;5\"",
       "location": "Shoulders",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10846,
@@ -43966,7 +44108,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SL/SLOWAKIJE-B-10975.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 10979,
@@ -44642,7 +44785,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SP/SPANJE-C-11137.mp4",
       "handshape": "bO;bO+",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11139,
@@ -45454,7 +45598,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SR/SRI-LANKA-A-11343.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11346,
@@ -45545,7 +45690,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ST/STAAT-LAND-A-11354.mp4",
       "handshape": "T;T+",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11355,
@@ -45560,7 +45706,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ST/STAAT-LAND-B-11355.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11368,
@@ -46374,7 +46521,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ST/STOCKHOLM(SWE)-A-11504.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11508,
@@ -46711,7 +46859,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ST/STREEK-A-11580.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11583,
@@ -47029,7 +47178,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SY/SYDNEY(AUS)-A-11671.mp4",
       "handshape": "2bO;2bO^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11675,
@@ -47409,7 +47559,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TA/TALLINN(EST)-A-11732.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11733,
@@ -48222,7 +48373,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TE/TESSENDERLO(LIM)-B-11961.mp4",
       "handshape": "T;T+",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11963,
@@ -48287,7 +48439,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TH/THAILAND-A-11972.mp4",
       "handshape": "1;1\"",
       "location": "Nose",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 11979,
@@ -48903,7 +49056,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TO/TONGEREN(LIM)-B-12114.mp4",
       "handshape": "bC;bC+",
       "location": "Mouth",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12124,
@@ -49008,7 +49162,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TO/TORONTO(CAN)-A-12135.mp4",
       "handshape": "B;B\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12136,
@@ -49509,7 +49664,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DO/DONALD-TRUMP-B-12258.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 12261,
@@ -49524,7 +49680,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TS/TSJECHIE-A-12261.mp4",
       "handshape": "B;B\"",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12266,
@@ -49601,7 +49758,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TU/TURKIJE-A-12318.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12323,
@@ -49650,7 +49808,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TU/TURNHOUT(ANT)-C-12327.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12330,
@@ -50243,7 +50402,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/UK/UKKEL(BXL)-A-12446.mp4",
       "handshape": "B;B\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12452,
@@ -51156,7 +51316,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VE/VENETIE(ITA)-A-12617.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12618,
@@ -51171,7 +51332,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VE/VENEZUELA-A-12618.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12622,
@@ -51870,7 +52032,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VE/VERENIGDE-ARABISCHE-EMIRATEN-A-12725.mp4",
       "handshape": "C;OB",
       "location": "Cheek",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12726,
@@ -51887,7 +52050,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VE/VERENIGDE-STATEN-A-12726.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 12729,
@@ -53787,7 +53951,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VI/VIETNAM-A-13057.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 13060,
@@ -54100,7 +54265,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VL/VLAAMS-BRABANT-C-13131.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 13134,
@@ -54116,7 +54282,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VL/VLAANDEREN-A-13134.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 13137,
@@ -54131,7 +54298,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VL/VLAG-A-13137.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 13140,
@@ -56082,7 +56250,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WA/WALES(GBR)-A-13593.mp4",
       "handshape": "3",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 13595,
@@ -56113,7 +56282,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WA/WALLONIE-A-13597.mp4",
       "handshape": "W;W\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 13598,
@@ -57606,7 +57776,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WI/WIT-RUSLAND-A-14062.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14071,
@@ -57823,7 +57994,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WO/WORTEL(ANT)-A-14150.mp4",
       "handshape": "1;1\"",
       "location": "BackOfHand",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14153,
@@ -59006,7 +59178,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZU/ZUID-AFRIKA-A-14480.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14491,
@@ -59209,7 +59382,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZW/ZWARTE-PIET-A-14572.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 14577,
@@ -59224,7 +59398,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZW/ZWEDEN-B-14577.mp4",
       "handshape": "C;OB",
       "location": "Wrist",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14597,
@@ -59364,7 +59539,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZW/ZWITSERLAND-A-14626.mp4",
       "handshape": "1;1\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14636,
@@ -59411,7 +59587,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MONGOLIE-C-14639.mp4",
       "handshape": "1;1\"",
       "location": "Eye",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14640,
@@ -59427,7 +59604,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SA/SAOEDI-ARABIE-E-14640.mp4",
       "handshape": "H;H\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14644,
@@ -59442,7 +59620,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FA/FACILITEITENGEMEENTE-C-14644.mp4",
       "handshape": null,
       "location": null,
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14645,
@@ -59744,7 +59923,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AR/ARDENNEN-D-14714.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14715,
@@ -59759,7 +59939,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AR/ARDENNEN-E-14715.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14716,
@@ -62429,7 +62610,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HO/HOOFDSTAD-A-14969.mp4",
       "handshape": "Y",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14970,
@@ -62444,7 +62626,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HO/HOOFDSTAD-B-14970.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 14972,
@@ -65171,7 +65354,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TU/TUNESIE-B-15235.mp4",
       "handshape": "T;T+",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15249,
@@ -66768,7 +66952,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BH/BHUTAN-A-15466.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15467,
@@ -66783,7 +66968,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRUNEI-A-15467.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15468,
@@ -66798,7 +66984,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CAMBODJA-A-15468.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15470,
@@ -66813,7 +67000,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CANBERRA(AUS)-A-15470.mp4",
       "handshape": "bC;bC+",
       "location": null,
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15471,
@@ -66828,7 +67016,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JA/JAPAN-F-15471.mp4",
       "handshape": "Q;Q+",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15472,
@@ -66843,7 +67032,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LA/LAOS-A-15472.mp4",
       "handshape": "5;5\"",
       "location": null,
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15473,
@@ -66859,7 +67049,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MALDIVEN-A-15473.mp4",
       "handshape": "C;OB",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15475,
@@ -66874,7 +67065,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MARSEILLE(FRA)-C-15475.mp4",
       "handshape": "B;B\"",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15481,
@@ -66889,7 +67081,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TA/TAIWAN-C-15481.mp4",
       "handshape": "S",
       "location": "Mouth",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15490,
@@ -66937,7 +67130,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IR/IRAK-F-15499.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15509,
@@ -66952,7 +67146,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IT/ITALIE-A-15509.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15519,
@@ -67016,7 +67211,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JE/JEHOVAH-A-15557.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 15565,
@@ -67032,7 +67228,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KA/KABOEL(AFG)-A-15565.mp4",
       "handshape": "bO;bO+",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15576,
@@ -67062,7 +67259,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KE/KEVIN-DE-BRUYNE-B-15583.mp4",
       "handshape": "V;V\"",
       "location": "Cheek",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 15614,
@@ -67077,7 +67275,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BART-WELLENS-A-15614.mp4",
       "handshape": "H;H\"",
       "location": "BackOfHand",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 15628,
@@ -67092,7 +67291,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BORIS-JELTSIN-D-15628.mp4",
       "handshape": "5;5\"",
       "location": "Nose",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 15646,
@@ -67107,7 +67307,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KR/KRETA(GRC)-B-15646.mp4",
       "handshape": "B;B\"",
       "location": "Belly",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15648,
@@ -67360,7 +67561,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LI/LIONEL-MESSI-A-15710.mp4",
       "handshape": "L",
       "location": "Nose",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 15722,
@@ -67375,7 +67577,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RE/RENE-MAGRITTE-A-15722.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 15730,
@@ -67577,7 +67780,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MONACO-B-15787.mp4",
       "handshape": "B;B\"",
       "location": "Shoulders",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15806,
@@ -67592,7 +67796,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NA/NAPELS(ITA)-B-15806.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15824,
@@ -67638,7 +67843,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NE/NEYMAR-A-15831.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 15836,
@@ -67683,7 +67889,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PAKISTAN-D-15921.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 15947,
@@ -68031,7 +68238,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SA/SARDINIE(ITA)-B-16045.mp4",
       "handshape": "S",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16052,
@@ -68062,7 +68270,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SI/SICILIE(ITA)-A-16062.mp4",
       "handshape": "W;W\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16072,
@@ -68125,7 +68334,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SU/SURINAME-A-16119.mp4",
       "handshape": "5;5\"",
       "location": null,
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16138,
@@ -68314,7 +68524,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VA/VATICAANSTAD-A-16242.mp4",
       "handshape": "H;H\"",
       "location": null,
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16252,
@@ -68344,7 +68555,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VI/VINCENT-VAN-GOGH-A-16253.mp4",
       "handshape": "B;B\"",
       "location": "Ear",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16257,
@@ -68375,7 +68587,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WA/WARSCHAU(POL)-A-16259.mp4",
       "handshape": "S",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16260,
@@ -68423,7 +68636,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZA/ZAGREB(HRV)-A-16274.mp4",
       "handshape": "W;W\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16275,
@@ -68490,7 +68704,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VL/VLADIMIR-LENIN-A-16296.mp4",
       "handshape": "C;OB",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16297,
@@ -68505,7 +68720,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TO/TOM-BOONEN-A-16297.mp4",
       "handshape": "Q;Q+",
       "location": "Ear",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16333,
@@ -68520,7 +68736,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MAHATMA-GANDHI-A-16333.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16337,
@@ -68550,7 +68767,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MADONNA-A-16338.mp4",
       "handshape": "5;5\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16350,
@@ -68565,7 +68783,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LA/LANCE-ARMSTRONG-A-16350.mp4",
       "handshape": "C;OB",
       "location": "LowerArm",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16353,
@@ -68596,7 +68815,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LE/LEOPOLD-II-A-16363.mp4",
       "handshape": "C;OB",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16368,
@@ -68612,7 +68832,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALBERT-II-A-16368.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16371,
@@ -68628,7 +68849,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALBERT-I-C-16371.mp4",
       "handshape": "8",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16394,
@@ -68675,7 +68897,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ED/EDDY-MERCKX-A-16415.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16451,
@@ -68735,7 +68958,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NA/NAMEN(BEL)-D-16467.mp4",
       "handshape": "V;V\"",
       "location": "BackOfHand",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16468,
@@ -68813,7 +69037,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AR/ARGENTINIE-C-16488.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 16490,
@@ -69927,7 +70152,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MAGGIE-DE-BLOCK-B-16883.mp4",
       "handshape": "C;OB",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 16896,
@@ -70239,7 +70465,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CH/CHARLEROI(BEL)-C-17022.mp4",
       "handshape": "S",
       "location": "Mouth",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17023,
@@ -70255,7 +70482,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AA/AARLEN(BEL)-A-17023.mp4",
       "handshape": "1;1\"",
       "location": "Mouth",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17047,
@@ -70385,7 +70613,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OO/OOSTENRIJK-F-17204.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17213,
@@ -70737,7 +70966,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HA/HASSELT(LIM)-B-17543.mp4",
       "handshape": "1;1\"",
       "location": "Neck",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17574,
@@ -70968,7 +71198,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BERLIJN(GER)-B-17850.mp4",
       "handshape": "S",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17933,
@@ -70983,7 +71214,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BU/BULGARIJE-C-17933.mp4",
       "handshape": "2bO;2bO^",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17938,
@@ -70998,7 +71230,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HO/HONGARIJE-D-17938.mp4",
       "handshape": "bO;bO+",
       "location": "Mouth",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17939,
@@ -71013,7 +71246,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KO/KOSOVO-B-17939.mp4",
       "handshape": "S",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17940,
@@ -71030,7 +71264,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MONTENEGRO-A-17940.mp4",
       "handshape": "V;V\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 17952,
@@ -71175,7 +71410,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PALESTINA-A-18066.mp4",
       "handshape": "5;5\"",
       "location": "Shoulders",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 18134,
@@ -71258,7 +71494,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PALESTINA-C-18230.mp4",
       "handshape": "S",
       "location": "Shoulders",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 18246,
@@ -71501,7 +71738,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BOEKAREST(ROU)-B-18433.mp4",
       "handshape": "B;B\"",
       "location": "Shoulders",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 18435,
@@ -71593,7 +71831,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AB/ABRAHAM-A-18497.mp4",
       "handshape": "C;OB",
       "location": "Wrist",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 18502,
@@ -71625,7 +71864,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JE/JEHOVAH-C-18505.mp4",
       "handshape": "Y",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 18508,
@@ -72001,7 +72241,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DE/DENEMARKEN-B-18804.mp4",
       "handshape": "W;W\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 18834,
@@ -72222,7 +72463,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LI/LISSABON(PRT)-D-19034.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 19045,
@@ -72388,7 +72630,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KE/KENIA-C-19228.mp4",
       "handshape": "T;T+",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 19236,
@@ -72588,7 +72831,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AN/ANTONI-GAUDI-A-19486.mp4",
       "handshape": "5;5\"",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 19498,
@@ -72855,7 +73099,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ME/MENORCA(ESP)-A-19854.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 19855,
@@ -72885,7 +73130,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CANARISCHE-EILANDEN(ESP)-A-19856.mp4",
       "handshape": "bY;Y1",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 19873,
@@ -72900,7 +73146,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FU/FUNCHAL(PRT)-A-19873.mp4",
       "handshape": "Y",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 19874,
@@ -72915,7 +73162,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MADEIRA(PRT)-A-19874.mp4",
       "handshape": "H;H\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 19875,
@@ -72930,7 +73178,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AZ/AZOREN(PRT)-A-19875.mp4",
       "handshape": "A;A\"",
       "location": "Cheek",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 19880,
@@ -73178,7 +73427,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TH/THIBAUT-COURTOIS-C-20211.mp4",
       "handshape": "S",
       "location": "Wrist",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 20230,
@@ -73223,7 +73473,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LJ/LJUBLJANA(SVN)-A-20275.mp4",
       "handshape": "L",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20282,
@@ -73301,7 +73552,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GU/GUYANA-C-20314.mp4",
       "handshape": "Q;Q+",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20326,
@@ -73395,7 +73647,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RE/REMCO-EVENEPOEL-A-20359.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 20360,
@@ -73410,7 +73663,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WO/WOUT-VAN-AERT-A-20360.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 20364,
@@ -73490,7 +73744,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HA/HANS-VANAKEN-A-20383.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 20388,
@@ -73759,7 +74014,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WE/WENEN(AUT)-C-20507.mp4",
       "handshape": "V;V\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20519,
@@ -73874,7 +74130,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OT/OTTAWA(CAN)-A-20553.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20561,
@@ -73920,7 +74177,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OM/OMAN-B-20577.mp4",
       "handshape": "B;B\"",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20581,
@@ -73935,7 +74193,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/QU/QUITO(ECU)-A-20581.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20587,
@@ -74027,7 +74286,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KI/KIEV(UKR)-B-20613.mp4",
       "handshape": "V;V\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20631,
@@ -74042,7 +74302,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VI/VILNIUS(LTU)-A-20631.mp4",
       "handshape": "B;B\"",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20636,
@@ -74146,7 +74407,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SE/SERVIE-C-20659.mp4",
       "handshape": "2bO;2bO^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20676,
@@ -74464,7 +74726,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DA/DAMPOORT-B-20854.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20855,
@@ -74729,7 +74992,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AS/ASTERIX-C-20970.mp4",
       "handshape": "L",
       "location": "Ear",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 20973,
@@ -74827,7 +75091,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RI/RIYADH(SAU)-A-20990.mp4",
       "handshape": "8",
       "location": "Cheek",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 20996,
@@ -74843,7 +75108,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TA/TASHKENT(UZB)-A-20996.mp4",
       "handshape": "8",
       "location": "Wrist",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 21006,
@@ -74858,7 +75124,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SO/SOFIA(BGR)-B-21006.mp4",
       "handshape": "L",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 21016,
@@ -74987,7 +75254,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BOGOTA(COL)-A-21043.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 21049,
@@ -75763,7 +76031,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PY/PYONGYANG(PRK)-A-21517.mp4",
       "handshape": "L",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 21584,
@@ -75826,7 +76095,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FA/FABIOLA-C-21631.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 21648,
@@ -75966,7 +76236,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IN/INDIA-D-21715.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 21743,
@@ -76014,7 +76285,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LE/LEOPOLD-II-B-21762.mp4",
       "handshape": "C;OB",
       "location": "Chin",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 21763,
@@ -76153,7 +76425,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DA/DAKHA(BGD)-A-21870.mp4",
       "handshape": "1;1\"",
       "location": "Wrist",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 21873,
@@ -76294,7 +76567,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TB/TBILISI(GEO)-A-21973.mp4",
       "handshape": "5;5\"",
       "location": "Belly",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 22014,
@@ -76419,7 +76693,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DO/DOKU-JEREMY-A-22189.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 22206,
@@ -76434,7 +76709,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KU/KUALA-LUMPUR(MYS)-B-22206.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 22218,
@@ -76524,7 +76800,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AD/ADAM-A-22226.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 22228,
@@ -76754,7 +77031,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BETHLEHEM-A-22267.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 22312,
@@ -76786,7 +77064,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DA/DAMIAAN-B-22315.mp4",
       "handshape": "5;5\"",
       "location": "BackOfHand",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 22327,
@@ -77019,7 +77298,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BEIROET(LBN)-A-22418.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 22419,
@@ -77645,7 +77925,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BAKOE(AZE)-A-22650.mp4",
       "handshape": "O;O^",
       "location": "Mouth",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 22652,
@@ -77851,7 +78132,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PE/PETRUS-B-22751.mp4",
       "handshape": "S",
       "location": "BackOfHand",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 22783,
@@ -78373,7 +78655,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SI/SIBERIE-C-23062.mp4",
       "handshape": "C;OB",
       "location": "Cheek",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23064,
@@ -78533,7 +78816,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TU/TURKMENISTAN-A-23168.mp4",
       "handshape": "3",
       "location": "Forehead",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23169,
@@ -78549,7 +78833,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AS/ASHGABAT(TKM)-A-23169.mp4",
       "handshape": "B;B\"",
       "location": "Ear",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23171,
@@ -78564,7 +78849,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AS/ASTANA(KAZ)-B-23171.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23173,
@@ -78642,7 +78928,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SP/SPITSBERGEN(NOR)-C-23208.mp4",
       "handshape": "bC;bC+",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23210,
@@ -78689,7 +78976,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MI/MICHELANGELO-A-23223.mp4",
       "handshape": "S",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_person_name": true
     },
     {
       "signId": 23230,
@@ -79216,7 +79504,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NO/NOORD-AMERIKA-E-23542.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23545,
@@ -79232,7 +79521,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GR/GROENLAND-B-23545.mp4",
       "handshape": "A;A\"",
       "location": "Ear",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23552,
@@ -79247,7 +79537,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WA/WASHINGTON-DC(USA)-F-23552.mp4",
       "handshape": "3",
       "location": "Shoulders",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23564,
@@ -79278,7 +79569,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AR/ARGENTINIE-D-23565.mp4",
       "handshape": "C;OB",
       "location": "Chest",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23566,
@@ -79293,7 +79585,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BU/BUENOS-AIRES(ARG)-A-23566.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23567,
@@ -79309,7 +79602,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BOLIVIA-C-23567.mp4",
       "handshape": "bY;Y1",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23568,
@@ -79324,7 +79618,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SU/SUCRE(BOL)-A-23568.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": null
+      "aspect": null,
+      "is_placename": true
     },
     {
       "signId": 23570,
@@ -79339,7 +79634,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRAZILIE-E-23570.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23571,
@@ -79354,7 +79650,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRASILIA(BRA)-A-23571.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23572,
@@ -79369,7 +79666,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SA/SANTIAGO(CHL)-A-23572.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23573,
@@ -79384,7 +79682,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CO/COLOMBIA-D-23573.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23574,
@@ -79399,7 +79698,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/EC/ECUADOR-E-23574.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23575,
@@ -79414,7 +79714,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FA/FALKLANDEILANDEN-A-23575.mp4",
       "handshape": "T;T+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23576,
@@ -79430,7 +79731,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FR/FRANS-GUYANA-A-23576.mp4",
       "handshape": "B;B\"",
       "location": "Shoulders",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23577,
@@ -79445,7 +79747,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CAYENNE(GUF)-A-23577.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23578,
@@ -79460,7 +79763,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PA/PARAGUAY-B-23578.mp4",
       "handshape": "V;V\"",
       "location": "BackOfHand",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23579,
@@ -79475,7 +79779,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AS/ASUNCION(PRY)-A-23579.mp4",
       "handshape": "A;A\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23581,
@@ -79490,7 +79795,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LI/LIMA(PER)-B-23581.mp4",
       "handshape": "L",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23582,
@@ -79505,7 +79811,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/UR/URUGUAY-C-23582.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23583,
@@ -79520,7 +79827,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MONTEVIDEO(URY)-A-23583.mp4",
       "handshape": "1;1\"",
       "location": "Nose",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23584,
@@ -79535,7 +79843,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CARACAS(VEN)-A-23584.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23585,
@@ -79551,7 +79860,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AM/AMERIKA-A-23585.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23622,
@@ -79581,7 +79891,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AN/ANTARCTICA-A-23626.mp4",
       "handshape": "A;A\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23627,
@@ -79597,7 +79908,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/YE/YEREVAN(ARM)-B-23627.mp4",
       "handshape": "Q;Q+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23628,
@@ -79613,7 +79925,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AZ/AZERBEIDZJAN-B-23628.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23630,
@@ -79629,7 +79942,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MANAMA(BHR)-A-23630.mp4",
       "handshape": "S",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23633,
@@ -79644,7 +79958,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TH/THIMPHU(BTN)-A-23633.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23635,
@@ -79659,7 +79974,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRUNEI-B-23635.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23638,
@@ -79674,7 +79990,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PH/PHNOM-PENH(KHM)-A-23638.mp4",
       "handshape": "5;5\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23639,
@@ -79690,7 +80007,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BEIJING(CHN)-A-23639.mp4",
       "handshape": "O;O^",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23640,
@@ -79707,7 +80025,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OO/OOST-TIMOR-B-23640.mp4",
       "handshape": "T;T+",
       "location": "Eye",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23644,
@@ -79722,7 +80041,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NE/NEW-DELHI(IND)-B-23644.mp4",
       "handshape": "bC;bC+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23645,
@@ -79737,7 +80057,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JA/JAKARTA(IDN)-B-23645.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23646,
@@ -79753,7 +80074,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TE/TEHERAN(IRN)-A-23646.mp4",
       "handshape": "A;A\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23647,
@@ -79768,7 +80090,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BAGDAD(IRQ)-B-23647.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23648,
@@ -79784,7 +80107,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TO/TOKIO(JPN)-B-23648.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23649,
@@ -79800,7 +80124,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JO/JORDANIE-C-23649.mp4",
       "handshape": "L",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23650,
@@ -79815,7 +80140,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AS/ASTANA(KAZ)-A-23650.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23651,
@@ -79833,7 +80159,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KO/KOEWEIT-B-23651.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23652,
@@ -79849,7 +80176,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KO/KOEWEIT-STAD(KWT)-A-23652.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23653,
@@ -79866,7 +80194,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KI/KIRGIZIE-B-23653.mp4",
       "handshape": "1;1\"",
       "location": "Eye",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23654,
@@ -79882,7 +80211,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BI/BISJKEK(KGZ)-A-23654.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23658,
@@ -79927,7 +80257,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VI/VIENTIANE(LAO)-A-23665.mp4",
       "handshape": "V;V\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23666,
@@ -79942,7 +80273,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LI/LIBANON-C-23666.mp4",
       "handshape": "2bO;2bO^",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23669,
@@ -79957,7 +80289,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MALE(MDV)-A-23669.mp4",
       "handshape": "B;B\"",
       "location": "Shoulders",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23671,
@@ -79972,7 +80305,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/UL/ULAANBAATAR(MNG)-A-23671.mp4",
       "handshape": "Y",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23672,
@@ -79988,7 +80322,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MY/MYANMAR-D-23672.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23673,
@@ -80003,7 +80338,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NA/NAYPYIDAW(MMR)-A-23673.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23674,
@@ -80018,7 +80354,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KA/KATHMANDU(NPL)-B-23674.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23675,
@@ -80033,7 +80370,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NO/NOORD-KOREA-D-23675.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23676,
@@ -80049,7 +80387,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MASQAT(OMN)-A-23676.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23677,
@@ -80064,7 +80403,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IS/ISLAMABAD(PAK)-A-23677.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23678,
@@ -80080,7 +80420,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RA/RAMALLAH(PSE)-A-23678.mp4",
       "handshape": "V;V\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23679,
@@ -80095,7 +80436,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/QA/QATAR-B-23679.mp4",
       "handshape": "1;1\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23680,
@@ -80110,7 +80452,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DO/DOHA(QAT)-B-23680.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23681,
@@ -80125,7 +80468,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SI/SINGAPORE-B-23681.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23682,
@@ -80141,7 +80485,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SE/SEOEL(KOR)-B-23682.mp4",
       "handshape": "3",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23687,
@@ -80219,7 +80564,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NA/NAGORNO-KARABACH-A-23699.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23700,
@@ -80236,7 +80582,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CH/CHANKENDI(AZE)-A-23700.mp4",
       "handshape": "C;OB",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23701,
@@ -80251,7 +80598,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CO/COLOMBO(LKA)-A-23701.mp4",
       "handshape": "bC;bC+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23702,
@@ -80267,7 +80615,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SY/SYRIE-C-23702.mp4",
       "handshape": "V;V\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23703,
@@ -80282,7 +80631,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DA/DAMASCUS(SYR)-B-23703.mp4",
       "handshape": "W;W\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23704,
@@ -80297,7 +80647,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TA/TAIPEI(TWN)-A-23704.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23705,
@@ -80313,7 +80664,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TA/TADZJIKISTAN-B-23705.mp4",
       "handshape": "B;B\"",
       "location": "Neck",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23706,
@@ -80330,7 +80682,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DU/DUSJANBE(TJK)-A-23706.mp4",
       "handshape": "1;1\"",
       "location": "Neck",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23707,
@@ -80345,7 +80698,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BANGKOK(THA)-C-23707.mp4",
       "handshape": "O;O^",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23708,
@@ -80360,7 +80714,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TI/TIBET-D-23708.mp4",
       "handshape": "B;B\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23709,
@@ -80517,7 +80872,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/HA/HANOI(VNM)-A-23718.mp4",
       "handshape": "H;H\"",
       "location": "BackOfHand",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23719,
@@ -80549,7 +80905,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JE/JEMEN-B-23721.mp4",
       "handshape": "Y",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23722,
@@ -80594,7 +80951,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AK/AKROTIRI-EN-DHEKELIA(GBR)-A-23725.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23727,
@@ -80655,7 +81013,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALBANIE-D-23731.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23732,
@@ -80670,7 +81029,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TI/TIRANA(ALB)-A-23732.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23733,
@@ -80685,7 +81045,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AN/ANDORRA-LA-VELLA(AND)-A-23733.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23734,
@@ -80701,7 +81062,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BELARUS-A-23734.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23735,
@@ -80716,7 +81078,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MI/MINSK(BLR)-B-23735.mp4",
       "handshape": "3",
       "location": "Belly",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23737,
@@ -80731,7 +81094,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BOSNIE-HERZEGOVINA-C-23737.mp4",
       "handshape": "B;B\"",
       "location": "Cheek",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23740,
@@ -80746,7 +81110,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NI/NICOSIA(CYP)-A-23740.mp4",
       "handshape": "A;A\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23750,
@@ -80762,7 +81127,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FA/FAEROER-EILANDEN(DNK)-C-23750.mp4",
       "handshape": "W;W\"",
       "location": "LowerArm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23751,
@@ -80777,7 +81143,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TO/TORSHAVN(FRO)-A-23751.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23752,
@@ -80793,7 +81160,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALAND(FIN)-A-23752.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23755,
@@ -80808,7 +81176,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GE/GEORGIE-B-23755.mp4",
       "handshape": "5;5\"",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23756,
@@ -80824,7 +81193,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AB/ABCHAZIE(GEO)-A-23756.mp4",
       "handshape": "S",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23757,
@@ -80839,7 +81209,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AT/ATHENE(GRC)-B-23757.mp4",
       "handshape": "A;A\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23758,
@@ -80854,7 +81225,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GR/GROOT-BRITTANNIE-A-23758.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23759,
@@ -80869,7 +81241,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BO/BOEDAPEST(HUN)-C-23759.mp4",
       "handshape": "Y",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23760,
@@ -80884,7 +81257,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IE/IERLAND-F-23760.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23761,
@@ -80899,7 +81273,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IJ/IJSLAND-H-23761.mp4",
       "handshape": "A;A\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23762,
@@ -80914,7 +81289,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RE/REYKJAVIK(ISL)-B-23762.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23763,
@@ -80929,7 +81305,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/IS/ISLE-OF-MAN(GBR)-A-23763.mp4",
       "handshape": "S",
       "location": "LowerArm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23764,
@@ -80944,7 +81321,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/DO/DOUGLAS(GBR)-A-23764.mp4",
       "handshape": "bC;bC+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23765,
@@ -80959,7 +81337,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JE/JERSEY(GBR)-A-23765.mp4",
       "handshape": "A;A\"",
       "location": "Shoulders",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23766,
@@ -80974,7 +81353,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SA/SAINT-HELIER(GBR)-A-23766.mp4",
       "handshape": "Y",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23767,
@@ -80989,7 +81369,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PR/PRISTINA(KOS)-A-23767.mp4",
       "handshape": "2bO;2bO^",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23768,
@@ -81004,7 +81385,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KR/KROATIE-D-23768.mp4",
       "handshape": "5;5\"",
       "location": "Shoulders",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23769,
@@ -81019,7 +81401,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LE/LETLAND-B-23769.mp4",
       "handshape": "L",
       "location": "Shoulders",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23771,
@@ -81050,7 +81433,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LI/LIECHTENSTEIN-A-23783.mp4",
       "handshape": "L",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23784,
@@ -81065,7 +81449,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VA/VADUZ(LIE)-A-23784.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23785,
@@ -81080,7 +81465,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LI/LITOUWEN-C-23785.mp4",
       "handshape": "V;V\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23786,
@@ -81096,7 +81482,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LU/LUXEMBURG-M-23786.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23787,
@@ -81111,7 +81498,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LU/LUXEMBURG(LUX)-A-23787.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23788,
@@ -81126,7 +81514,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VA/VALLETTA(MLT)-A-23788.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23789,
@@ -81141,7 +81530,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MO/MOLDAVIE-C-23789.mp4",
       "handshape": "C;OB",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23790,
@@ -81157,7 +81547,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CH/CHISINAU(MDA)-A-23790.mp4",
       "handshape": "5;5\"",
       "location": "Nose",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23791,
@@ -81172,7 +81563,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PO/PODGORICA(MNE)-A-23791.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23792,
@@ -81187,7 +81579,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NO/NOORD-CYPRUS-A-23792.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23793,
@@ -81202,7 +81595,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NO/NORTH-NICOSIA(CYP)-A-23793.mp4",
       "handshape": "L",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23794,
@@ -81217,7 +81611,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NO/NOORD-IERLAND-A-23794.mp4",
       "handshape": "H;H\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23795,
@@ -81232,7 +81627,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BELFAST(GBR)-A-23795.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23796,
@@ -81247,7 +81643,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/NO/NOORD-MACEDONIE-A-23796.mp4",
       "handshape": "5;5\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23797,
@@ -81262,7 +81659,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SK/SKOPJE(MKD)-A-23797.mp4",
       "handshape": "H;H\"",
       "location": "Eye",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23798,
@@ -81277,7 +81675,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PO/POLEN-J-23798.mp4",
       "handshape": "B;B\"",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23799,
@@ -81292,7 +81691,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SA/SAN-MARINO-B-23799.mp4",
       "handshape": "B;B\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23800,
@@ -81307,7 +81707,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ED/EDINBURGH(GBR)-B-23800.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23801,
@@ -81322,7 +81723,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BELGRADO(SRB)-D-23801.mp4",
       "handshape": "L",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23802,
@@ -81337,7 +81739,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/SL/SLOVENIE-C-23802.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23803,
@@ -81352,7 +81755,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BR/BRATISLAVA(SVK)-C-23803.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23804,
@@ -81368,7 +81772,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CE/CEUTA(ESP)-A-23804.mp4",
       "handshape": "A;A\"",
       "location": "Cheek",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23805,
@@ -81383,7 +81788,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MADRID(ESP)-F-23805.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23806,
@@ -81398,7 +81804,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ME/MELILLA(ESP)-A-23806.mp4",
       "handshape": "L",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23807,
@@ -81413,7 +81820,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TR/TRANSNISTRIE-A-23807.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23808,
@@ -81428,7 +81836,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TI/TIRASPOL(MDA)-A-23808.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23809,
@@ -81443,7 +81852,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TS/TSJECHIE-B-23809.mp4",
       "handshape": "B;B\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23810,
@@ -81458,7 +81868,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PR/PRAAG(CZE)-E-23810.mp4",
       "handshape": "Y",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23811,
@@ -81473,7 +81884,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TU/TURKIJE-E-23811.mp4",
       "handshape": "bC;bC+",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23812,
@@ -81488,7 +81900,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AN/ANKARA(TUR)-B-23812.mp4",
       "handshape": "bO;bO+",
       "location": "Cheek",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23813,
@@ -81503,7 +81916,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VA/VATICAANSTAD-B-23813.mp4",
       "handshape": "H;H\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23814,
@@ -81518,7 +81932,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VE/VERENIGD-KONINKRIJK-A-23814.mp4",
       "handshape": "1;1\"",
       "location": "Palm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23815,
@@ -81533,7 +81948,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CARDIFF(GBR)-C-23815.mp4",
       "handshape": "bC;bC+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23816,
@@ -81548,7 +81964,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZU/ZUID-OSSETIE(GEO)-A-23816.mp4",
       "handshape": "5;5\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23817,
@@ -81563,7 +81980,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ST/STOCKHOLM(SWE)-C-23817.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23818,
@@ -81578,7 +81996,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BE/BERN(CHE)-A-23818.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23820,
@@ -81593,7 +82012,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/OC/OCEANIE-C-23820.mp4",
       "handshape": "O;O^",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23841,
@@ -81608,7 +82028,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WE/WELLINGTON(NZL)-B-23841.mp4",
       "handshape": "3",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23842,
@@ -81623,7 +82044,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CO/COOKEILANDEN(NZL)-A-23842.mp4",
       "handshape": "C;OB",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23860,
@@ -81768,7 +82190,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/BA/BALEAREN(ESP)-B-23935.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23938,
@@ -81799,7 +82222,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FO/FORMENTERA(ESP)-A-23939.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23941,
@@ -81815,7 +82239,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CABRERA(ESP)-A-23941.mp4",
       "handshape": "bY;Y1",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 23943,
@@ -81911,7 +82336,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JA/JAMES-ENSOR-C-23950.mp4",
       "handshape": "5;5\"",
       "location": null,
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23951,
@@ -81926,7 +82352,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/VI/VIKTOR-HORTA-A-23951.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23953,
@@ -82001,7 +82428,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JA/JAN-VAN-EYCK-A-23958.mp4",
       "handshape": "C;OB",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23959,
@@ -82016,7 +82444,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JA/JAN-VAN-EYCK-B-23959.mp4",
       "handshape": "1;1\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23960,
@@ -82046,7 +82475,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MI/MICHELANGELO-B-23962.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23967,
@@ -82107,7 +82537,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PI/PIET--MONDRIAAN-A-23974.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23975,
@@ -82167,7 +82598,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PI/PIETER-PAUL-RUBENS-B-23980.mp4",
       "handshape": "T;T+",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23981,
@@ -82182,7 +82614,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/PI/PIETER-PAUL-RUBENS-C-23981.mp4",
       "handshape": "O;O^",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23982,
@@ -82242,7 +82675,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CL/CLAUDE-MONET-A-23990.mp4",
       "handshape": "5;5\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 23994,
@@ -83343,7 +83777,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ER/ERWIN-VERVECKEN-A-24166.mp4",
       "handshape": null,
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24167,
@@ -83377,7 +83812,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FA/FABIAN-CANCELLARA-A-24168.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24169,
@@ -83447,7 +83883,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FR/FREDDY-MAERTENS-A-24172.mp4",
       "handshape": "1;1\"",
       "location": "Ear",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24173,
@@ -83464,7 +83901,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/FR/FREDDY-MAERTENS-B-24173.mp4",
       "handshape": "1;1\"",
       "location": "Chin",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24174,
@@ -83481,7 +83919,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/GR/GREG-LEMOND-A-24174.mp4",
       "handshape": "1;1\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24175,
@@ -83516,7 +83955,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JA/JACQUES-ANQUETIL-A-24176.mp4",
       "handshape": "A;A\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24180,
@@ -83605,7 +84045,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LA/LANCE-ARMSTRONG-C-24184.mp4",
       "handshape": "H;H\"",
       "location": "LowerArm",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24186,
@@ -83656,7 +84097,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LO/LOTTE-KOPECKY-A-24188.mp4",
       "handshape": "B;B\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24190,
@@ -83673,7 +84115,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MARK-CAVENDISH-A-24190.mp4",
       "handshape": "S",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24191,
@@ -83690,7 +84133,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MATTHIEU-VAN-DER-POEL-A-24191.mp4",
       "handshape": "1;1\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24193,
@@ -83707,7 +84151,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JO/JOHAN-MUSEEUW-A-24193.mp4",
       "handshape": "B;B\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24194,
@@ -83724,7 +84169,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JO/JOHAN-MUSEEUW-B-24194.mp4",
       "handshape": "5;5\"",
       "location": "Cheek",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24195,
@@ -83741,7 +84187,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JO/JOHAN-MUSEEUW-C-24195.mp4",
       "handshape": "Q;Q+",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24198,
@@ -83758,7 +84205,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RO/ROUBAIX(FRA)-C-24198.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_placename": true
     },
     {
       "signId": 24199,
@@ -83847,7 +84295,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RA/RAYMOND-POULIDOR-A-24203.mp4",
       "handshape": null,
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24204,
@@ -83864,7 +84313,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RE/REMCO-EVENEPOEL-B-24204.mp4",
       "handshape": "Y",
       "location": "Ear",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24206,
@@ -83915,7 +84365,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/RO/ROGER-DE-VLAEMINCK-B-24208.mp4",
       "handshape": "V;V\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24209,
@@ -84002,7 +84453,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TA/TADEJ-POGACAR-B-24214.mp4",
       "handshape": "Q;Q+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24215,
@@ -84087,7 +84539,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TI/TIM-MERLIER-A-24219.mp4",
       "handshape": "Y",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24220,
@@ -84193,7 +84646,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/WO/WOUT-VAN-AERT-B-24226.mp4",
       "handshape": "8",
       "location": "Chest",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24227,
@@ -84211,7 +84665,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ZD/ZDENEK-STYBAR-A-24227.mp4",
       "handshape": "1;1\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24228,
@@ -84946,7 +85401,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/CA/CASTAGNE-TIMOTHY-A-24423.mp4",
       "handshape": "A;A\"",
       "location": "Mouth",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24425,
@@ -84963,7 +85419,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/KO/KONI-DEWINTER-A-24425.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24429,
@@ -84997,7 +85454,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/ME/MECHELE-BRANDON-A-24431.mp4",
       "handshape": "1;1\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24433,
@@ -85014,7 +85472,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TH/THOMAS-MEUNIER-A-24433.mp4",
       "handshape": "O;O^",
       "location": "Eye",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24434,
@@ -85048,7 +85507,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/AL/ALEXIS-SAELEMAEKERS-A-24440.mp4",
       "handshape": "bO;bO+",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24441,
@@ -85065,7 +85525,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/JO/JOAQUIN-SEYS-A-24441.mp4",
       "handshape": "5;5\"",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24442,
@@ -85082,7 +85543,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/TH/THEATE-ARTHUR-B-24442.mp4",
       "handshape": "C;OB",
       "location": "Forehead",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24444,
@@ -85099,7 +85561,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/LE/LEANDRO-TROSSARD-A-24444.mp4",
       "handshape": "C;OB",
       "location": "Eye",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24454,
@@ -85188,7 +85651,8 @@
       "video": "https://vlaamsegebarentaal.be/signbank/dictionary/protected_media/glossvideo/MA/MARIO-DE-CLERCQ-B-24458.mp4",
       "handshape": "5;5\"",
       "location": "NeutralSpace",
-      "aspect": 1.333
+      "aspect": 1.333,
+      "is_person_name": true
     },
     {
       "signId": 24474,

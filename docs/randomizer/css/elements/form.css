@@ -1,5 +1,6 @@
 select,
-input {
+input,
+textarea {
 	background-color: var(--color-surface);
 	border: var(--border-default);
 	border-radius: var(--radius-default);

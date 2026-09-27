@@ -1,0 +1,112 @@
+favorites-manager {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
+.favorites-manager__header {
+	align-items: center;
+	border-bottom: var(--border-default);
+	display: flex;
+	gap: var(--space-8--rem);
+	padding: var(--space-8--rem) var(--space-12--rem);
+}
+
+.favorites-manager__title {
+	font-size: 1rem;
+	margin: 0 auto 0 0;
+}
+
+.favorites-manager__back {
+	color: var(--color-accent);
+	font-size: 0.85em;
+}
+
+.favorites-manager__main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-32--rem);
+	margin: 0 auto;
+	max-width: 40rem;
+	padding: var(--space-24--rem) var(--space-16--rem);
+	width: 100%;
+}
+
+.favorites-manager__heading {
+	color: var(--color-muted);
+	font-size: 0.8em;
+	letter-spacing: 0.05em;
+	margin: 0 0 var(--space-8--rem);
+	text-transform: uppercase;
+}
+
+.favorites-manager__list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4--rem);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.favorites-manager__item {
+	align-items: center;
+	background-color: var(--color-surface);
+	border: var(--border-default);
+	border-radius: var(--radius-default);
+	display: flex;
+	gap: var(--space-8--rem);
+	padding: var(--space-4--rem) var(--space-4--rem) var(--space-4--rem) var(--space-12--rem);
+}
+
+.favorites-manager__name {
+	color: inherit;
+	margin-right: auto;
+	text-decoration: none;
+}
+
+a.favorites-manager__name:hover {
+	color: var(--color-accent);
+	text-decoration: underline;
+}
+
+.favorites-manager__name--unknown {
+	color: var(--color-muted);
+	font-style: italic;
+}
+
+.favorites-manager__empty {
+	color: var(--color-muted);
+	margin: 0;
+}
+
+.favorites-manager__form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-8--rem);
+}
+
+.favorites-manager__label {
+	color: var(--color-muted);
+	font-size: 0.85em;
+}
+
+.favorites-manager__input {
+	resize: vertical;
+	width: 100%;
+}
+
+.favorites-manager__actions {
+	align-items: center;
+	display: flex;
+	gap: var(--space-12--rem);
+}
+
+.favorites-manager__status {
+	color: var(--color-muted);
+	font-size: 0.85em;
+}
+
+.favorites-manager__status[data-error] {
+	color: rgb(200 60 60);
+}

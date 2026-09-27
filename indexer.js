@@ -18,6 +18,96 @@ const MIN_INTERVAL_MS = 500;
 const SNAPSHOT_EVERY = 50;
 const OUTPUT = path.join( path.dirname( fileURLToPath( import.meta.url ) ), 'docs', 'randomizer', 'signs.json' );
 
+// Signs in any of these categories are considered place names.
+const PLACENAME_CATEGORIES = [
+	'City',
+	'Country',
+	'Region',
+];
+
+// Signs in this category are name signs; most are person names.
+const PERSON_NAME_CATEGORY = 'NameSign';
+
+// Name signs that are not person names (brands, organisations, places, concepts…).
+const NON_PERSON_NAME_GLOSSES = new Set( [
+	'AIRBNB',
+	'ALDI',
+	'AMAZONE',
+	'APPLE',
+	'ARGENTA',
+	'AUDI',
+	'AZERBEIDZJAN',
+	'BACARDI-BREEZER',
+	'BAILEYS',
+	'BLANKENBERGE(WVL)',
+	'BMW',
+	'CARREFOUR',
+	'CITROEN-AUTO',
+	'CLUB-BRUGGE',
+	'COLRUYT',
+	'CONGO',
+	'CUBA',
+	'DAMPOORT',
+	'DECATHLON',
+	'DELHAIZE',
+	'DOBERMANN',
+	'DOOFJONG',
+	'EMMAUS-SCHOOL-ANTWERPEN',
+	'ETNA(ITA)',
+	'FACEBOOK',
+	'FACETIME',
+	'FORD',
+	'GALLAUDET',
+	'GREENPEACE',
+	'HAMAS',
+	'HATTRICK',
+	'HONDA',
+	'HONG-KONG',
+	'HONGARIJE',
+	'IKEA',
+	'INSTAGRAM',
+	'INTER',
+	'KARREWIET',
+	'KASTERLINDEN',
+	'KAZACHSTAN',
+	'KETNET',
+	'KONINKLIJK-INSTITUUT-WOLUWE',
+	'LACOSTE',
+	'LIDL',
+	'LINUX',
+	'LUFTHANSA',
+	'MACAU',
+	'MALEISIE',
+	'MAS',
+	"MCDONALD'S",
+	'MERCEDES',
+	'NAAMGEBAAR',
+	'NIKE',
+	'NOORD-AMERIKA',
+	'OEZBEKISTAN',
+	'PALE-ALE',
+	'PHOTOSHOP',
+	'PINTEREST',
+	'RENAULT',
+	'RODE-KRUIS',
+	'ROLLS-ROYCE',
+	'RYANAIR',
+	'SAAB',
+	'SCHELDE',
+	'SKYPE',
+	'SNAPCHAT',
+	'STARBUCKS',
+	'TESSENDERLO(LIM)',
+	'TOYOTA',
+	'TUBORG',
+	'UNIA',
+	'VENEZUELA',
+	'VISUALBOX',
+	'VOLKSWAGEN',
+	'YOUTUBE',
+	'ZARA',
+] );
+
 let previousRequest = 0;
 
 async function rateLimitedRequest( url ) {
@@ -58,9 +148,9 @@ async function rateLimitedText( url ) {
 	return res.text();
 }
 
-function buildUrl( from, size ) {
+function buildUrl( from, size, categories = [] ) {
 	const params = new URLSearchParams( {
-		c: '[]',
+		c: JSON.stringify( categories ),
 		from: String( from ),
 		g: '[]',
 		h: '[]',
@@ -217,6 +307,14 @@ async function indexSigns( byId ) {
 				if ( 'aspect' in previous ) {
 					next.aspect = previous.aspect;
 				}
+
+				if ( 'is_placename' in previous ) {
+					next.is_placename = previous.is_placename;
+				}
+
+				if ( 'is_person_name' in previous ) {
+					next.is_person_name = previous.is_person_name;
+				}
 			}
 
 			byId.set( sign.signId, next );
@@ -231,6 +329,62 @@ async function indexSigns( byId ) {
 	}
 
 	process.stdout.write( '\n' );
+}
+
+async function fetchCategorySignIds( category ) {
+	const signIds = new Set();
+	let from = 0;
+	let total = Infinity;
+
+	while ( from < total ) {
+		const data = await rateLimitedFetch( buildUrl( from, PAGE_SIZE, [
+			category,
+		] ) );
+		total = data.totalNumberSignOverviews;
+		const page = data.signOverviews ?? [];
+
+		for ( const sign of page ) {
+			signIds.add( sign.signId );
+		}
+
+		from += PAGE_SIZE;
+
+		if ( 0 === page.length ) {
+			break;
+		}
+	}
+
+	return signIds;
+}
+
+async function addNameFlags( byId ) {
+	const placenameSignIds = new Set();
+
+	try {
+		for ( const category of PLACENAME_CATEGORIES ) {
+			for ( const signId of await fetchCategorySignIds( category ) ) {
+				placenameSignIds.add( signId );
+			}
+		}
+
+		const personNameSignIds = await fetchCategorySignIds( PERSON_NAME_CATEGORY );
+
+		for ( const sign of byId.values() ) {
+			if ( placenameSignIds.has( sign.signId ) ) {
+				sign.is_placename = true;
+			} else {
+				delete sign.is_placename;
+			}
+
+			if ( personNameSignIds.has( sign.signId ) && !NON_PERSON_NAME_GLOSSES.has( sign.glossName ) ) {
+				sign.is_person_name = true;
+			} else {
+				delete sign.is_person_name;
+			}
+		}
+	} catch ( err ) {
+		console.warn( `Could not fetch categories for name flags: ${err.message}` );
+	}
 }
 
 async function enrich( byId, labels, locations, icons ) {
@@ -329,6 +483,7 @@ async function main() {
 	const icons = await buildIcons( rateLimitedText, existingFile ?? {} );
 
 	await enrich( byId, labels, locations, icons );
+	await addNameFlags( byId );
 	await addAspects( byId );
 
 	const result = assemble( byId, labels, locations, icons );

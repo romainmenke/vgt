@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VGT | Favorieten</title>
+	<link rel="icon" href="data:,">
+	<link rel="stylesheet" href="./css/application.css">
+	<script type="module" src="./js/favorites-manager.js"></script>
+</head>
+<body>
+	<favorites-manager>
+		<header class="favorites-manager__header">
+			<h1 class="favorites-manager__title">Favorieten</h1>
+			<a class="favorites-manager__back" href="./index.html">Terug</a>
+		</header>
+		<main class="favorites-manager__main">
+			<section class="favorites-manager__section">
+				<h2 class="favorites-manager__heading">Huidige favorieten</h2>
+				<ul class="favorites-manager__list" data-favorites-list></ul>
+			</section>
+			<section class="favorites-manager__section">
+				<h2 class="favorites-manager__heading">Toevoegen via links</h2>
+				<form class="favorites-manager__form" data-favorites-form>
+					<label class="favorites-manager__label" for="favorites-links">Plak één of meer links naar gloss-pagina's, elk op een eigen regel</label>
+					<textarea id="favorites-links" class="favorites-manager__input" data-favorites-input rows="6" placeholder="https://woordenboek.vlaamsegebarentaal.be/gloss/SCHELDE?sid=10436"></textarea>
+					<div class="favorites-manager__actions">
+						<button type="submit">Voeg toe</button>
+						<span class="favorites-manager__status" data-favorites-status role="status" aria-live="polite"></span>
+					</div>
+				</form>
+			</section>
+		</main>
+	</favorites-manager>
+</body>
+</html>

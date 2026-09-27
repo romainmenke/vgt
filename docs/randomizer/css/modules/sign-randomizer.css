@@ -1,7 +1,7 @@
 sign-randomizer {
 	display: block flex;
 	flex-direction: column;
-	height: 100dvh;
+	min-height: 100dvh;
 }
 
 .sign-randomizer__header {
@@ -17,6 +17,12 @@ sign-randomizer {
 	color: var(--color-muted);
 	font-size: 0.8em;
 	margin-right: auto;
+}
+
+.sign-randomizer__manage {
+	color: var(--color-accent);
+	font-size: 0.8em;
+	text-decoration: none;
 }
 
 .sign-randomizer__modes {
@@ -39,10 +45,15 @@ sign-randomizer {
 
 .sign-randomizer__main {
 	flex: 1;
-	overflow: auto;
-	min-height: 0;
 }
 
 .sign-randomizer__error {
 	padding: var(--space-32--rem);
+}
+
+.sign-randomizer__footer {
+	border-top: var(--border-default);
+	display: flex;
+	justify-content: flex-end;
+	padding: var(--space-8--rem) var(--space-12--rem);
 }
