@@ -25,6 +25,9 @@ const ALL_REGIONS = [
 const PAGE_SIZE = 100;
 const MIN_INTERVAL_MS = 500;
 const SNAPSHOT_EVERY = 50;
+
+// Aspect probing is disabled for now; videos fall back to the default aspect.
+const PROBE_ASPECTS = false;
 const OUTPUT = path.join( path.dirname( fileURLToPath( import.meta.url ) ), 'docs', 'randomizer', 'signs.json' );
 
 // Signs in any of these categories are considered place names.
@@ -508,7 +511,10 @@ async function main() {
 
 	await enrich( byId, labels, locations, icons );
 	await addNameFlags( byId );
-	await addAspects( byId, snapshot );
+
+	if ( PROBE_ASPECTS ) {
+		await addAspects( byId, snapshot );
+	}
 
 	const result = assemble( byId, labels, locations, icons );
 	await writeFile( OUTPUT, JSON.stringify( result, null, 2 ) + '\n' );
