@@ -1,5 +1,6 @@
 import { closestRandomizer } from './dom.js';
-import { readFavoriteSignIds,
+import { isDefaultFavoriteSignId,
+	readFavoriteSignIds,
 	writeFavoriteSignIds } from './storage.js';
 
 export class SignFavorites extends HTMLElement {
@@ -64,9 +65,10 @@ export class SignFavorites extends HTMLElement {
 
 		if ( toggleEl ) {
 			const isFavorite = null !== signId && favoriteSignIds.has( signId );
+			const isDefaultFavorite = null !== signId && isDefaultFavoriteSignId( signId );
 
 			toggleEl.setAttribute( 'aria-pressed', String( isFavorite ) );
-			toggleEl.disabled = null === signId;
+			toggleEl.disabled = null === signId || isDefaultFavorite;
 		}
 
 		const filterEl = this.filterEl;
@@ -80,7 +82,7 @@ export class SignFavorites extends HTMLElement {
 	#toggleCurrent() {
 		const signId = this.#currentSignId();
 
-		if ( null === signId ) {
+		if ( null === signId || isDefaultFavoriteSignId( signId ) ) {
 			return;
 		}
 

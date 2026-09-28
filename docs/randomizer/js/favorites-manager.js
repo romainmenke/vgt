@@ -1,6 +1,7 @@
 import { getSign,
 	whenReady } from './sign-data.js';
-import { readFavoriteSignIds,
+import { isDefaultFavoriteSignId,
+	readFavoriteSignIds,
 	writeFavoriteSignIds } from './storage.js';
 
 const SID_PARAM = 'sid';
@@ -144,6 +145,18 @@ export class FavoritesManager extends HTMLElement {
 			nameEl.classList.add( 'favorites-manager__name--unknown' );
 		}
 
+		if ( isDefaultFavoriteSignId( signId ) ) {
+			item.classList.add( 'favorites-manager__item--default' );
+
+			const badgeEl = document.createElement( 'span' );
+			badgeEl.className = 'favorites-manager__badge';
+			badgeEl.textContent = 'Standaard';
+
+			item.append( nameEl, badgeEl );
+
+			return item;
+		}
+
 		const removeEl = document.createElement( 'button' );
 		removeEl.type = 'button';
 		removeEl.className = 'favorites-manager__remove';
@@ -210,6 +223,12 @@ export class FavoritesManager extends HTMLElement {
 	}
 
 	#remove( signId ) {
+		if ( isDefaultFavoriteSignId( signId ) ) {
+			this.#showStatus( 'Standaardfavorieten kunnen niet worden verwijderd.', true );
+
+			return;
+		}
+
 		if ( !this.#favorites.delete( signId ) ) {
 			return;
 		}

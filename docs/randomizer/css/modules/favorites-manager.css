@@ -75,6 +75,14 @@ a.favorites-manager__name:hover {
 	font-style: italic;
 }
 
+.favorites-manager__badge {
+	color: var(--color-muted);
+	font-size: 0.8em;
+	letter-spacing: 0.05em;
+	padding: var(--space-4--rem) var(--space-8--rem);
+	text-transform: uppercase;
+}
+
 .favorites-manager__empty {
 	color: var(--color-muted);
 	margin: 0;
