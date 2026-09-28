@@ -142,6 +142,7 @@ export class SignRandomizer extends HTMLElement {
 	}
 
 	#restoring = false;
+	#queue = [];
 
 	// Life cycle
 	async connectedCallback() {
@@ -250,6 +251,7 @@ export class SignRandomizer extends HTMLElement {
 	#favoritesFilterChangeHandler = ( event ) => {
 		event.stopPropagation();
 		this.onlyFavorites = Boolean( event.detail.onlyFavorites );
+		this.#queue = [];
 		this.#next();
 	};
 
@@ -300,10 +302,36 @@ export class SignRandomizer extends HTMLElement {
 		const candidates = this.#pool();
 
 		if ( 0 === candidates.length ) {
+			this.#queue = [];
+
 			return null;
 		}
 
-		return candidates[Math.floor( Math.random() * candidates.length )];
+		const candidateSignIds = new Set( candidates.map( ( sign ) => {
+			return sign.signId;
+		} ) );
+
+		this.#queue = this.#queue.filter( ( signId ) => {
+			return candidateSignIds.has( signId );
+		} );
+
+		if ( 0 === this.#queue.length ) {
+			this.#queue = candidates.map( ( sign ) => {
+				return sign.signId;
+			} );
+
+			for ( let i = this.#queue.length - 1; i > 0; i-- ) {
+				const j = Math.floor( Math.random() * ( i + 1 ) );
+
+				[ this.#queue[i], this.#queue[j] ] = [ this.#queue[j], this.#queue[i] ];
+			}
+		}
+
+		if ( 1 < this.#queue.length && this.#queue[0] === this.signId ) {
+			this.#queue.push( this.#queue.shift() );
+		}
+
+		return getSign( this.#queue.shift() );
 	}
 
 	#restoreFromLocation() {
