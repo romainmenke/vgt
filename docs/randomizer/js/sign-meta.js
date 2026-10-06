@@ -30,6 +30,20 @@ export class SignMeta extends HTMLElement {
 		this.removeEventListener( 'click', this.#clickHandler );
 	}
 
+	get conceal() {
+		return this.hasAttribute( 'conceal' );
+	}
+
+	set conceal( value ) {
+		if ( value ) {
+			this.setAttribute( 'conceal', '' );
+
+			return;
+		}
+
+		this.removeAttribute( 'conceal' );
+	}
+
 	#section( name ) {
 		return this.querySelector( `[data-meta-section="${name}"]` );
 	}

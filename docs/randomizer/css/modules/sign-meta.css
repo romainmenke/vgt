@@ -36,6 +36,13 @@ sign-meta {
 	gap: var(--space-8--rem);
 }
 
+sign-meta[conceal] [data-meta-section="handshapes"],
+sign-meta[conceal] [data-meta-section="locations"] {
+	filter: blur(7px);
+	pointer-events: none;
+	user-select: none;
+}
+
 .sign-meta__variants {
 	display: block flex;
 	flex-wrap: wrap;

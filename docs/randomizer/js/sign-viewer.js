@@ -68,6 +68,7 @@ export class SignViewer extends HTMLElement {
 		const metaEl = this.metaEl;
 
 		if ( metaEl ) {
+			metaEl.conceal = 'recite' === mode;
 			metaEl.sign = sign;
 		}
 
