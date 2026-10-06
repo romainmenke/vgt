@@ -38,7 +38,8 @@ sign-meta {
 
 sign-meta[conceal] [data-meta-section="handshapes"],
 sign-meta[conceal] [data-meta-section="locations"] {
-	filter: blur(7px);
+	filter: blur(20px);
+	opacity: 0.2;
 	pointer-events: none;
 	user-select: none;
 }
